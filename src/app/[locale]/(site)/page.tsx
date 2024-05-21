@@ -11,7 +11,7 @@ import Produto1 from "../../../../public/assets/Product1.jpg"
 import Product3 from "../../../../public/assets/Product3.jpg"
 import Sol from "../../../../public/assets/sol.jpg"
 import {useTranslations} from 'next-intl';
-import {unstable_setRequestLocale} from 'next-intl/server';
+
 
 
 
