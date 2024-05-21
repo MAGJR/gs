@@ -1,0 +1,57 @@
+{
+    "site": {
+        "title": "Product",
+        "header": {
+            "product": "Products",
+            "about": "About",
+            "contact": "Contact"
+        },
+        "description": "Discover our high-quality product line, designed to improve your life.",
+        "button": {
+            "title": "Buy Now"    
+        },
+        "link": "Learn More",
+        "main": {
+            "title": "Our Products",
+            "product" : {
+                "product01": {
+                    "title": "Product x",
+                    "description" : "Product 1 Description"
+                },
+                "product02": {
+                    "title": "Product y",
+                    "description" : "Product 2 Description"
+            },
+            "product03": {
+                "title": "Product z",
+                "description": "Product 3 Description"
+            },
+            "testimonials": {
+                "title": "What Our Customers Say",
+                "card": {
+                    "name": "Jhon Doe",
+                    "satisfy": "Satisfied Customer",
+                    "description": "I'm very satisfied with the products from Uma. They have actually improved my life."
+                },
+                "card2": {
+                    "name": "Jane Doe",
+                    "satisfy": "Satisfied Customer",
+                    "description": "The products from Uma are amazing! I recommend them to all my friends."
+                },
+                "card3": {
+                    "name": "Bob Smith",
+                    "satisfy":"Satisfied Customer",
+                    "description": "I can't live without the products from Uma. They are essential to me."
+                }
+
+            },
+            "footer": {
+                "title": "© 2024 Uma. All Rights Reserved.",
+                "product": "Products",
+                "about": "About",
+                "contact": "Contact"
+            }
+        }
+    }
+}
+}

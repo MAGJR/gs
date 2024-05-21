@@ -1,0 +1,57 @@
+{
+    "site": {
+        "title": "Produtos",
+        "header": {
+            "product": "Produto",
+            "about": "Sobre",
+            "contact": "Contato"
+        },
+        "description": "Conheça nossa linha de produtos de alta qualidade, projetados para melhorar sua vida.",
+        "button": {
+            "title": "Comprar Agora"    
+        },
+        "link": "Saiba Mais",
+        "main": {
+            "title": "Nossos Produtos",
+            "product" : {
+                "product01": {
+                    "title": "Produto x",
+                    "description" : "Descrição do Produto 1"
+                },
+                "product02": {
+                    "title": "Produto y",
+                    "description" : "Descrição do Produto 2"
+            },
+            "product03": {
+                "title": "Produto z",
+                "description": "Descrição do Produto 3"
+            },
+            "testimonials": {
+                "title": "O que nossos clientes dizem",
+                "card": {
+                    "name": "Jhon Doe",
+                    "satisfy": "Cliente Satisfeita",
+                    "description": "Estou muito satisfeito com os produtos Uma. Eles realmente melhoraram minha vida."
+                },
+                "card2": {
+                    "name": "Jane Doe",
+                    "satisfy": "Cliente Satisfeita",
+                    "description": "Os produtos Uma são incríveis! Eu recomendo a todos os meus amigos."
+                },
+                "card3": {
+                    "name": "Bob Smith",
+                    "satisfy":"Cliente Satisfeita",
+                    "description": "Eu não posso viver sem os produtos Uma. Eles são essenciais para mim."
+                }
+
+            },
+            "footer": {
+                "title": "© 2024 Uma. Todos os direitos reservados.",
+                "product": "Produto",
+                "about": "Sobre",
+                "contact": "Contato"
+            }
+        }
+    }
+}
+}
