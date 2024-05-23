@@ -11,37 +11,41 @@ import Produto1 from "../../../../public/assets/Product1.jpg"
 import Product3 from "../../../../public/assets/Product3.jpg"
 import Sol from "../../../../public/assets/sol.jpg"
 import {useTranslations} from 'next-intl';
-
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 
 
 
 export default function Page() {
   
-
+  const [parent] = useAutoAnimate({duration: 4000})
   const t = useTranslations()
-
-
     const product = [
         {
             id: 1,
-            title: 'Product x',
-            img: Produto
+            title: t("site.main.product.product01.title"),
+            description: t("site.main.product.product01.description"),
+            img: Produto,
+            price: t("site.main.product.product01.price")
         },
         {
             id: 2,
-            title: 'Product y',
-            img: Produto1
+            title: t("site.main.product.product02.title"),
+            description: t("site.main.product.product02.description"),
+            img: Produto1,
+            price: t("site.main.product.product02.price")
         },
         {
             id: 3,
-            title: 'Product z',
-            img: Product3
+            title: t("site.main.product.product03.title"),
+            description: t("site.main.product.product03.description"),
+            img: Product3,
+            price: t("site.main.product.product03.price")
         }
     ]
     
   return (
     <>
-      <header className="bg-gray-900 text-white py-4 px-6 md:px-8 flex items-center justify-between">
+      <header  className="bg-black text-white py-4 px-6 md:px-8 flex items-center justify-between">
         <Link className="flex items-center gap-2 font-bold text-lg" href="#">
           <Image 
           src={Home} 
@@ -100,26 +104,29 @@ export default function Page() {
         <div className="container px-4 md:px-8">
             
           <h2 className="text-2xl md:text-3xl font-bold mb-8">{t("site.main.title")}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div ref={parent} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {product.map((products) => (
-            <Card key={products.id}>
+            <Card  key={products.id}>
+              <div className="flex items-center justify-center">
                 <Image
-                alt="Product 1"
-                className="rounded-t-lg"
+                alt="Products"
+                className="rounded-t-lg "
                 height={200}
                 src={products.img}
                 style={{
-                  aspectRatio: "300/200",
+                  aspectRatio: "250/200",
                   objectFit: "cover",
                 }}
+                
                 width={300}
               />
-              <CardContent className="p-4">
+              </div>
+              <CardContent className="pt-4 grid items-center justify-center">
                 <h3 className="text-lg font-bold mb-2">{products.title}</h3>
-                <p className="text-gray-600 mb-4">{t("site.main.product.product01.title")}</p>
+                <small className="text-gray-600 mb-4">{products.description}</small>
                 <div className="flex items-center justify-between">
-                  <span className="font-bold text-lg">R$ 99,99</span>
-                  <Button size="sm">{t("site.button.title")}</Button>
+                  <span className="font-bold text-lg">{products.price}</span>
+                  <Button className="justify-end" size="sm">{t("site.button.title")}</Button>
                 </div>
               </CardContent>
             </Card>
@@ -181,7 +188,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <footer className="bg-gray-900 text-white py-8 px-6 md:px-8">
+      <footer className="bg-black text-white py-8 px-6 md:px-8">
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center gap-2 font-bold text-lg">

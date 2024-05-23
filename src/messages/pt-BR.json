@@ -1,12 +1,12 @@
 {
     "site": {
-        "title": "Produtos",
+        "title": "GS a melhor cadeia lógica de pereciveis",
         "header": {
             "product": "Produto",
             "about": "Sobre",
             "contact": "Contato"
         },
-        "description": "Conheça nossa linha de produtos de alta qualidade, projetados para melhorar sua vida.",
+        "description": "Aqui você encontra nossa linha completa de produtos para a cadeia lógistica de perecíveis",
         "button": {
             "title": "Comprar Agora"    
         },
@@ -15,16 +15,19 @@
             "title": "Nossos Produtos",
             "product" : {
                 "product01": {
-                    "title": "Produto x",
-                    "description" : "Descrição do Produto 1"
+                    "title": "divisoria Termica Cortina",
+                    "description" : "A divisoria termica cortina  efeita um isolamento acustico e termico, reduzindo o ruido e o calor gerado pela passagem de ar.  Perfeita para uso em escritorios, salas de reuniao, hospedagens.",
+                    "price": "R$ 1.000,00"
                 },
                 "product02": {
-                    "title": "Produto y",
-                    "description" : "Descrição do Produto 2"
-            },
+                    "title": "Divisória térmica bipartida",
+                    "description" : "A divisoria termica bipartida efeita um isolamento acustico e termico em divisores de dois ambientes.  Perfeita para uso em escritorios, salas de reuniao, hospedagens, entre outros",
+                    "price": "R$ 950,00"
+                },
             "product03": {
-                "title": "Produto z",
-                "description": "Descrição do Produto 3"
+                "title": "Capa termica para palete",
+                "description": "A capa termica para palete efeita um isolamento termico, reduzindo a perda de calor da palete.  Perfeita para uso em eventos, festas, entrega de comida, entre outros",
+                "price": "R$ $990,00"
             },
             "testimonials": {
                 "title": "O que nossos clientes dizem",
