@@ -12,6 +12,7 @@ import Product3 from "../../../../public/assets/Product3.jpg"
 import Sol from "../../../../public/assets/sol.jpg"
 import {useTranslations} from 'next-intl';
 import { useAutoAnimate } from '@formkit/auto-animate/react'
+import { StarIcon } from "lucide-react"
 
 
 
@@ -39,9 +40,11 @@ export default function Page() {
             title: t("site.main.product.product03.title"),
             description: t("site.main.product.product03.description"),
             img: Product3,
-            price: t("site.main.product.product03.price")
+            price: t("site.main.product.product03.price"),
+            
         }
     ]
+   
     
   return (
     <>
@@ -102,7 +105,8 @@ export default function Page() {
       </section>
       <section className="py-12 md:py-20">
         <div className="container px-4 md:px-8">
-            
+             
+
           <h2 className="text-2xl md:text-3xl font-bold mb-8">{t("site.main.title")}</h2>
           <div ref={parent} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {product.map((products) => (
@@ -125,7 +129,15 @@ export default function Page() {
                 <h3 className="text-lg font-bold mb-2">{products.title}</h3>
                 <small className="text-gray-600 mb-4">{products.description}</small>
                 <div className="flex items-center justify-between">
-                  <span className="font-bold text-lg">{products.price}</span>
+                
+        
+          <div className="flex items-center gap-0.5">
+            {product.map(start => (
+              <StarIcon key={start.id} className="w-5 h-5 fill-primary" />
+            ))}
+            
+            <StarIcon className="w-5 h-5 fill-muted stroke-muted-foreground" />
+            </div>
                   <Button className="justify-end" size="sm">{t("site.button.title")}</Button>
                 </div>
               </CardContent>
