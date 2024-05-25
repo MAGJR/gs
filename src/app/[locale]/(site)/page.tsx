@@ -15,6 +15,8 @@ import { useAutoAnimate } from '@formkit/auto-animate/react'
 import { StarIcon } from "lucide-react"
 import Logo from "./_components/logo"
 import Home from '../../../../public/assets/Home.jpg'
+import Header from "./_components/header"
+import Footer from "./_components/footer"
 
 
 export default function Page() {
@@ -49,26 +51,7 @@ export default function Page() {
     
   return (
     <>
-      <header  className="bg-black text-white py-4 px-6 md:px-8 flex items-center justify-between">
-        <Link className="flex items-center gap-2 font-bold text-lg" href="#">
-          <Logo />
-          
-        </Link>
-        <nav className="hidden md:flex items-center gap-6">
-          <Link className="hover:underline" href="#">
-            {t("site.header.product")}
-          </Link>
-          <Link className="hover:underline" href="#">
-          {t("site.header.about")}
-          </Link>
-          <Link className="hover:underline" href="#">
-          {t("site.header.contact")}
-          </Link>
-        </nav>
-        <Button className="md:hidden" variant="outline">
-          
-        </Button>
-      </header>
+      <Header />
       <section className="bg-gray-100 py-12 md:py-20">
         <div className="container px-4 md:px-8">
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -195,34 +178,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <footer className="bg-black text-white py-8 px-6 md:px-8">
-        <div className="container">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="flex items-center gap-2 font-bold text-lg">
-              <Image 
-              src={Home}    
-              width={50}
-              height={50}
-              className="border-collapse border-2 border-transparent rounded-full"
-              alt="Footer"
-              />
-              
-            </div>
-            <nav className="flex items-center gap-6 mt-4 md:mt-0">
-              <Link className="hover:underline" href="#">
-               {t("site.main.product.footer.product")}
-              </Link>
-              <Link className="hover:underline" href="#">
-              {t("site.main.product.footer.about")}
-              </Link>
-              <Link className="hover:underline" href="#">
-              {t("site.main.product.footer.contact")}
-              </Link>
-            </nav>
-          </div>
-          <p className="text-center mt-8 text-sm text-gray-400">{t("site.main.product.footer.title")}</p>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }
