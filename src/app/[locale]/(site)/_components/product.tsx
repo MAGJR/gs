@@ -1,17 +1,17 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import Image from "next/image";
 
 
-import Produto from "../../../../public/assets/Producto.jpg"
-import Produto1 from "../../../../public/assets/Product1.jpg"
-import Product3 from "../../../../public/assets/Product3.jpg"
+import Produto from "../../../../../public/assets/Product.png"
+import Produto1 from "../../../../../public/assets/Product1.jpg"
+import Product3 from "../../../../../public/assets/Product2.jpg"
 import { useTranslations } from "next-intl";
 import { StarIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useAutoAnimate } from "@formkit/auto-animate/react";
+
 
 export default function Product() {
-  const [parent] = useAutoAnimate()
+  
   const t = useTranslations();
   
   const product = [
@@ -45,7 +45,7 @@ export default function Product() {
              
 
           <h2 className="text-2xl md:text-3xl font-bold mb-8">{t("site.main.title")}</h2>
-          <div ref={parent} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {product.map((products) => (
             <Card  key={products.id}>
               <div className="flex items-center justify-center">
@@ -64,18 +64,10 @@ export default function Product() {
               </div>
               <CardContent className="pt-4 grid items-center justify-center">
                 <h3 className="text-lg font-bold mb-2">{products.title}</h3>
-                <small className="text-gray-600 mb-4">{products.description}</small>
-                <div className="flex items-center justify-between">
-                
-        
-          <div className="flex items-center gap-0.5">
-            {product.map(start => (
-              <StarIcon key={start.id} className="w-5 h-5 fill-primary" />
-            ))}
-            
-            <StarIcon className="w-5 h-5 fill-muted stroke-muted-foreground" />
-            </div>
-                  <Button className="justify-end" size="sm">{t("site.button.title")}</Button>
+                <small className="text-gray-600 ">{products.description}</small>
+                <div className="flex items-end justify-between">
+
+                <Button  className="mt-4" size="sm">{t("site.button.title")}</Button>
                 </div>
               </CardContent>
             </Card>
