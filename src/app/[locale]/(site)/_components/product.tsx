@@ -6,7 +6,6 @@ import Produto from "../../../../../public/assets/Product.png"
 import Produto1 from "../../../../../public/assets/Product1.jpg"
 import Product3 from "../../../../../public/assets/Product2.jpg"
 import { useTranslations } from "next-intl";
-import { StarIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 

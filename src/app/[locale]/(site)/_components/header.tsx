@@ -7,7 +7,7 @@ export default function Header() {
     const t = useTranslations();
 
     return (
-        <header  className="bg-black text-white py-4 px-6 md:px-8 flex items-center justify-between">
+        <header  className="bg-white text-black py-4 px-6 md:px-8 flex items-center justify-between">
         <Link className="flex items-center gap-2 font-bold text-lg" href="#">
           <Logo />
           
