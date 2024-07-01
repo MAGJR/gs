@@ -10,8 +10,8 @@ export default function Page() {
     <>
       <Header />
       <Hero/>
-      <Product />
-      <Testimonials />
+      {/* <Product />
+      <Testimonials /> */}
       <Footer />
     </>
   )

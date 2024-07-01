@@ -7,7 +7,13 @@ import DivisionTermic from '../../../../../public/assets/DivisãoTermica.png'
 import TransportImg from '../../../../../public/assets/transport.png'
 import DivisorTermic from '../../../../../public/assets/Divisoria-Termica-Movel_carac1.png'
 import DivisionTermicTwo from '../../../../../public/assets/Divisoria-Termica-Movel_comp1.png'
+import Corousel1 from '../../../../../public/assets/carroussel1.png'
+import Corousel2 from '../../../../../public/assets/carroussel2.png'
+import Corousel3 from '../../../../../public/assets/carroussel3.png'
 import { useState } from "react"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import { Card, CardContent } from "@/components/ui/card"
+import { Earth, Shield, Truck } from "lucide-react"
 
 
 export function Hero () {
@@ -72,12 +78,29 @@ export function Hero () {
         }
     ]
 
+    const imagesCorousel = [
+        {
+            id: 1,
+            img: Corousel1
+        } ,
+        {
+            id: 2,
+            img: Corousel2
+        } ,
+        {
+            id: 3,
+            img: Corousel3
+        }
+    ]
+
+
     return (
         <div className=" w-full flex flex-col items-center justify-center"> 
-        <div>
+        <div className="w-full">
         <Image src={Hero1} 
         alt="Hero" 
-        
+        width={1000} 
+        layout="responsive"
         objectFit="cover"
         />
         </div>
@@ -172,12 +195,50 @@ export function Hero () {
                         </div>
                         ))}
                 </div>
+                <div>
+                    
+                </div>
 
                 </div>
                     
                 </div>
             </div>
+            <Carousel className="w-full max-w-3xl mt-36">
+      <CarouselContent>
+        {imagesCorousel.map((img, index) => (
+          <CarouselItem key={index}>
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-10">
+                  <Image src={img.img} alt='Image'  />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
 
+        <div className="flex flex-col items-center justify-center w-screen h-screen">
+            <div className="flex justify-around items-center w-screen">
+                <div className="flex flex-col items-center">
+                    <Truck width={200} height={200} />
+                    <p className="text-center text-lg">Transporte Seguro</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <Earth width={200} height={200} />
+                    <p className="text-center text-lg">Entrega em qualquer ponto do planeta</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <Shield width={200} height={200} />
+                    <p className="text-center text-lg">Segurança contra roubos</p>
+                </div>
+            </div>
+        </div>
+
+       
 
 
         </div>
