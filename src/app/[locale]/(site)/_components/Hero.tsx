@@ -13,11 +13,34 @@ import Corousel3 from '../../../../../public/assets/carroussel3.png'
 import { useState } from "react"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { Card, CardContent } from "@/components/ui/card"
-import { Earth, Shield, Truck } from "lucide-react"
+import { Clock, Earth, Shield, Truck } from "lucide-react"
 
+
+type ProductsProps = {
+    id: number,
+    product: string
+}
+
+type ItemsInfoProps = {
+    id: number,
+    title: string,
+    description: string
+}
+
+type DetailsInfoProps = {
+    id: number,
+    number: number,
+    description: string
+}
+
+type ImageCorouselProps = {
+    id: number,
+    img: any
+}
 
 export function Hero () {
-    const items = [
+
+    const items: ItemsInfoProps[] = [
         {
             id: 1,
             title: "Leve",
@@ -40,7 +63,7 @@ export function Hero () {
         }
     ]
 
-    const numbers = [
+    const numbers: DetailsInfoProps[] = [
         {
             id: 1,
             number: 1,
@@ -59,26 +82,26 @@ export function Hero () {
         {
             id: 4,
             number: 1,
-            description: 'ESTRUTURA EM ALUMÍNIO'
+            description: 'Estrutura em alumínio'
         },
         {
             id: 5,
             number: 2,
-            description: 'PREENCHIMENTO EM EPS'
+            description: 'Preenchimento em eps'
         },
         {
             id: 6,
             number: 3,
-            description: 'REFORÇO NA BASE COM CHAPA PLÁSTICA'
+            description: 'Reforço na base com chapa plástica'
         },
         {
             id: 6,
             number: 4,
-            description: 'REVESTIMENTO LONA 550 MICRAS'
+            description: 'Revestimento lona 550 micras'
         }
     ]
 
-    const imagesCorousel = [
+    const imagesCorousel: ImageCorouselProps[] = [
         {
             id: 1,
             img: Corousel1
@@ -90,6 +113,33 @@ export function Hero () {
         {
             id: 3,
             img: Corousel3
+        }
+    ]
+
+    const products: ProductsProps[] = [
+        {
+            id: 1,
+            product: 'Carnes'
+        },
+        {
+            id: 2,
+            product: 'Embutidos'
+        },
+        {
+            id: 3,
+            product: 'Verduras'
+        },
+        {
+            id: 4,
+            product: 'Frutas'
+        },
+        {
+            id: 5,
+            product: 'Carnes congeladas'
+        },
+        {
+            id: 6,
+            product: 'E muito mais'
         }
     ]
 
@@ -124,7 +174,21 @@ export function Hero () {
 
             <div className="pt-8 pb-8 ">
                 <div style={{position: 'relative'}}>
-                    <div className="absolute top-10 right-0 w-10 bg-red-400">a</div>
+                    <div className="absolute top-10 left-60 w-[800px] h-[200px] bg-gray-200 rounded-sm ">
+                <div className="grid grid-cols-3 m-12 gap-y-6">
+                            {products.map((product) => (
+                        <div className="flex items-center " key={product.id}>
+                            <div className="w-8 h-8 flex items-center justify-center rounded-br-lg rounded-tl-lg">
+                                <span className="text-blue-800 font-bold">✓</span>
+                            </div>
+                                <h1 className="text-lg text-bold">{product.product}</h1>
+                        </div>
+                        ))}
+
+                        
+
+                    </div>
+                </div>
                     <Image  src={TransportImg} alt="transport"/>
                 </div>
             </div>
@@ -157,8 +221,8 @@ export function Hero () {
                     </div>
                     
                 </div>
-                <div className="mt-8">
-                    <h1 className="text-3xl md:text-4xl font-bold">Caracteristicas</h1>
+                <div className="mt-10 ">
+                    <h1 className="text-3xl md:text-4xl font-bold pb-4">Caracteristicas</h1>
                     
                 <div className="flex items-center justify-between gap-8 bg-slate-100">
                     <div className="text-left ml-36 ">
@@ -180,7 +244,7 @@ export function Hero () {
                     />
                     </div>
                 </div>
-                <div className="flex gap-5 mr-auto pl-8 pt-8 items-center">
+                <div className="flex gap-5 mr-auto pl-8 pt-8 items-center ml-8">
                     <Image src={DivisionTermicTwo} alt='Image' />
                     
                 <div className="flex flex-col" style={{maxWidth: "600px"}}>
@@ -221,26 +285,25 @@ export function Hero () {
       <CarouselNext />
     </Carousel>
 
-        <div className="flex flex-col items-center justify-center w-screen h-screen">
-            <div className="flex justify-around items-center w-screen">
+        <div className="flex flex-col items-center justify-center mt-8 mb-10 p-4 bg-slate-100 rounded-lg">
+            <div className="flex justify-around items-center  gap-10  ">
                 <div className="flex flex-col items-center">
-                    <Truck width={200} height={200} />
-                    <p className="text-center text-lg">Transporte Seguro</p>
+                    <Truck width={80} height={80} />
+                    <h1 className="text-center text-lg font-bold">Produção Rápida</h1>
+                    <span className="text-gray-600">Produzimos e remetemos seu pedido em 24h</span>
                 </div>
-                <div className="flex flex-col items-center">
-                    <Earth width={200} height={200} />
-                    <p className="text-center text-lg">Entrega em qualquer ponto do planeta</p>
+                <div className="flex flex-col items-center ">
+                    <Earth width={80} height={80} />
+                    <h1 className="text-center text-lg font-bold">Entrega em qualquer ponto do planeta</h1>
+                    <span className="text-gray-600">Produzimos e remetemos seu pedido em 24h</span>
                 </div>
-                <div className="flex flex-col items-center">
-                    <Shield width={200} height={200} />
-                    <p className="text-center text-lg">Segurança contra roubos</p>
+                <div className="flex flex-col items-center ">
+                    <Clock width={80} height={80} />
+                    <h1 className="text-center text-lg font-bold">Rapidez de Entrega</h1>
+                    <span className="text-gray-600">Produzimos e remetemos seu pedido em 24h</span>
                 </div>
             </div>
         </div>
-
-       
-
-
         </div>
         
         
