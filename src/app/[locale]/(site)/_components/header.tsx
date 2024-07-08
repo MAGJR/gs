@@ -1,10 +1,11 @@
+import Image from "next/image";
 
 
 export function Header() {
  return (
     <header className="flex items-center justify-between p-4 border-b">
           <div className="flex items-center space-x-4">
-            <img src="/placeholder.svg" alt="Logo" className="h-12" />
+            <Image src="/placeholder.svg" alt="Logo" className="h-12" />
             <h1 className="text-2xl font-bold text-blue-900">GS</h1>
           </div>
           <nav className="flex space-x-4">
