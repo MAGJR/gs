@@ -6,12 +6,14 @@ import Divisor from '../../../../public/assets/divisor.png'
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { TruckComponent } from "@/app/components/truck";
-import Truck from '../../../../public/assets/truck.png'
+import Truck from '../../../../public/assets/truck.jpg'
 import Airplane from '../../../../public/assets/aviao.png'
 import Ship from '../../../../public/assets/navio.png'
-import Home from '../../../../public/assets/hero.png'
+import Home from '../../../../public/assets/homeTruck.png'
+import { CardDescription, CardTitle } from "@/components/ui/card";
 
 export default function Page() {
+
     return (
         <div className="min-h-screen bg-white">
         {/* <Header/> */}
@@ -19,10 +21,10 @@ export default function Page() {
         <main className="flex flex-col items-center p-8 space-y-8">
           <div className="flex items-center space-x-8">
             <div className="space-y-4">
-              <h2 className="text-sm font-semibold text-gray-500">TERMIC SEPARATORS</h2>
-              <h1 className="text-3xl font-bold text-blue-900">Distribution of loads within trucks</h1>
-              <p className="text-gray-700">For frozen, cooled and dry loads</p>
-              <button className="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700">Learn More</button>
+              <CardDescription className="font-semibold ">TERMIC SEPARATORS</CardDescription>
+              <CardTitle className="font-bold text-blue-900">Distribution of loads within trucks</CardTitle>
+              <CardDescription className="">For frozen, cooled and dry loads</CardDescription>
+              <Button className="px-4 py-2 ">Learn More</Button>
               <div className="flex space-x-2">
                 <span className="w-2 h-2 bg-gray-300 rounded-full" />
                 <span className="w-2 h-2 bg-gray-300 rounded-full" />
@@ -92,6 +94,20 @@ export default function Page() {
           </div>
           <TruckComponent />
           <Timeline />
+          <div className="flex justify-between items-center bg-gray-100 p-8 rounded-xl shadow-lg">
+      <div className="w-1/3 text-center">
+        <h2 className="text-2xl font-bold text-blue-900">Mission</h2>
+        <p className="mt-4 text-gray-700">Develop customized solutions to meet customer needs, with quality and efficiency.</p>
+      </div>
+      <div className="w-1/3 text-center border-l border-r px-4">
+        <h2 className="text-2xl font-bold text-blue-900">Vision</h2>
+        <p className="mt-4 text-gray-700">To be the reference company in the industry, recognized as the best option by customers, employees, suppliers, and society as a whole.</p>
+      </div>
+      <div className="w-1/3 text-center">
+        <h2 className="text-2xl font-bold text-blue-900">Values</h2>
+        <p className="mt-4 text-gray-700">Integrity, commitment, human valuation, achievement of results, continuous improvement of processes, innovation, respect for the environment.</p>
+      </div>
+    </div>
         </main>
       </div>
     )

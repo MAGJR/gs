@@ -115,7 +115,7 @@ export default function Page ({params}: PageProps) {
             width={500}
             alt="Hero" />
         </div>
-
+        
         <div className="flex items-start gap-5 mr-auto pl-8 pb-8">
             
             <Image 
