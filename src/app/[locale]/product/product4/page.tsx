@@ -134,7 +134,7 @@ export default function Page ({params}: PageProps) {
             <div className="pt-8 text-center mb-8">
                 <h1 className="text-3xl md:text-4xl font-bold pb-10">Benefits</h1>
                 <div className="flex items-center justify-center">
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 w-[900px]">
                        {items.map((descriptions) => (
                         <div key={descriptions.id} className="bg-gray-100 rounded-lg p-2">
                            

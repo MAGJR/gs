@@ -7,49 +7,51 @@ interface Event {
   description: string;
 }
 
+
+
 const events: Event[] = [
   {
     year: '1982',
-    title: 'Fundação',
-    description: 'Em novembro de 1982 a Soluforte foi fundada. O começo foi do zero e simples, mas a dedicação era total. A parceria de uma dos nossos primeiros clientes, a então chamada Sadia, atual BRF, nos fez sair dos serviços e começarmos a desenvolver produtos.',
+    title: 'Foundation',
+    description: 'In November 1982 GS was founded. It started from zero and simple, but the dedication was total. The partnership with one of our first clients, the Sadia, now BRF, made us leave the services and start developing products.',
   },
 
   {
     year: '1996',
-    title: 'Criada a divisória térmica de cortina',
-    description: 'No transporte de congelados e resfriados, para otimização do transporte, criou-se a divisão de cargas. No entanto, as primeiras divisórias eram muito pesadas e impossível de ser operada por apenas um funcionário. O desafio estava lançado e a solução foi desenvolvida. Surgiu a divisória tipo cortina.'
+    title: 'Created the thermic divider of type curtain',
+    description: 'In the transport of frozen and chilled goods, optimization of transport was needed. However, the first dividers were very heavy and impossible to be operated by only one person. The challenge was issued and the solution was developed. Appeared the divider of type curtain.'
   },
   {
     year: '2005',
-    title: 'Criadas as divisórias bipartidas e móveis',
-    description: 'São criadas as divisórias bipartidas e móveis, para atender os clientes que necessitavam de um produto estruturado, para viagens de longa distância e também para a distribuição logística.'
+    title: 'Created the bipartite and movable dividers',
+    description: 'To address the needs of our clients who needed a structured product, for long distance travel and logistics, dividers were created. Bipartite and mobile dividers were created to meet the demands of customers who needed a product for long distance travel and logistics.'
   },
   {
     year: '2006',
-    title: 'Criada a lona térmica',
-    description: 'Com o expertise que tínhamos com os produtos térmicos que fabricávamos, desenvolvemos a lona térmica, leve e reforçada com costuras de compressão.'
+    title: 'Created the thermic blanket',
+    description: 'With the expertise we had in the thermic products we manufactured, we developed the thermic blanket, light and reinforced with compression seams.'
   },
   {
     year: '2014',
-    title: 'Criação do bolsão térmico',
-    description: 'Com o “know how” que tínhamos sobre a cadeia logística do frio, desenvolvemos mais uma solução para transporte de mercadorias perecíveis em pequena quantidade, o bolsão térmico, utilizado em vans, furgões ou até mesmo em carros.'
+    title: 'Created the thermal insulation bag',
+    description: 'With the expertise we had in the logistics chain of frozen goods, we developed another solution for the transport of perishable goods in small quantities. The thermal insulation bag is used in vans, trucks or even cars.'
   },
   {
     year: '2015',
-    title: 'Criação das coberturas térmicas para pallet',
-    description: 'Expandimos nossa linha de produtos para as coberturas térmicas para paletes ao perceber que havia, no mercado, a necessidade de produtos para proteção térmica de cargas paletizadas em viagens de curta e longa duração.'
+    title: 'Created the thermic covers for pallets',
+    description: 'Expanding our product line, we created thermic covers for pallets after realizing that there was a need for thermal protection products for paletized goods in short and long-distance transport.'
   },
   {
     year: '2019',
-    title: 'Muda para a nova sede',
-    description: 'Em 2017, a GS iniciou a construção da nova sede da empresa. Foram mais de 12 meses de planejamento e exceção, e no começo de 2019, muda-se para sua nova sede, com amplo espaço, maquinários novos e novos projetos em desenvolvimento.'
+    title: 'Moved to the new headquarters',
+    description: 'In 2017, GS started building the new headquarters of the company. It took more than 12 months of planning and exception, and in January 2019, moved to its new headquarters with ample space, new machinery, and new projects in development.'
   },
   {
     year: '2024',
-    title: 'Abertura nos Estados Unidos',
+    title: 'Opening in the United States',
     description: 'title'
   }
-  // Adicione outros eventos aqui...
+  // Add more events here...
 ];
 
 export default function Timeline() {

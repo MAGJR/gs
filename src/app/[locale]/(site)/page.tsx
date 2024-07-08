@@ -11,6 +11,7 @@ import Airplane from '../../../../public/assets/aviao.png'
 import Ship from '../../../../public/assets/navio.png'
 import Home from '../../../../public/assets/homeTruck.png'
 import { CardDescription, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator"
 
 export default function Page() {
 
@@ -24,7 +25,9 @@ export default function Page() {
               <CardDescription className="font-semibold ">TERMIC SEPARATORS</CardDescription>
               <CardTitle className="font-bold text-blue-900">Distribution of loads within trucks</CardTitle>
               <CardDescription className="">For frozen, cooled and dry loads</CardDescription>
-              <Button className="px-4 py-2 ">Learn More</Button>
+              <Link href={'/product'}>
+              <Button className="px-4 py-2 mt-2">Learn More</Button>
+              </Link>
               <div className="flex space-x-2">
                 <span className="w-2 h-2 bg-gray-300 rounded-full" />
                 <span className="w-2 h-2 bg-gray-300 rounded-full" />
@@ -39,6 +42,7 @@ export default function Page() {
                 className="rounded-lg"
                 />
           </div>
+          <Separator className="my-36" />
           <div className="flex space-x-8">
             <div className="p-4 bg-white rounded shadow">
             <Image 
@@ -70,7 +74,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="flex justify-center space-x-6 bg-slate-100 w-[1120px] rounded-tl-3xl ">
+          <div className="flex justify-center space-x-6 bg-gray-200 w-[1120px] rounded-lg ">
             <Image src={Divisor} alt='image'/>
             
             <div className="p-8">
@@ -93,6 +97,7 @@ export default function Page() {
             </div>
           </div>
           <TruckComponent />
+          <Separator className="my-36" />
           <Timeline />
           <div className="flex justify-between items-center bg-gray-100 p-8 rounded-xl shadow-lg">
       <div className="w-1/3 text-center">

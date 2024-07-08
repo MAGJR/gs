@@ -109,7 +109,7 @@ export default function Page ({params}: PageProps) {
         <div className="w-full flex flex-col items-center justify-center">
                     AQUI É O BANNER
         <div className="flex flex-col items-center justify-center pt-5 mb-36">   
-            <CardTitle className="mb-4">Thermal Insulation Sheet for Pallets</CardTitle>
+            <CardTitle className="mb-4">Thermal Insulation Cover for Pallets</CardTitle>
             <Image 
             src={coberturaTermicaMain} 
             width={500}
@@ -137,9 +137,9 @@ export default function Page ({params}: PageProps) {
 
          <CardComponentCapaTermica items={cardConfig} />
             <div className="pt-8 text-center mb-8">
-                <CardTitle className="text-3xl md:text-4xl font-bold pb-10"> Benefits</CardTitle>
+                <CardTitle className="text-3xl md:text-4xl font-bold pb-10">Benefits</CardTitle>
                 <div className="flex items-center justify-center">
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 w-[900px]">
                        {items.map((descriptions) => (
                         <div key={descriptions.id} className="bg-gray-100 rounded-lg p-2">
                            
