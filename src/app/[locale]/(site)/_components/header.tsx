@@ -1,31 +1,29 @@
-import Link from "next/link";
-import Logo from "./logo";
-import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
 
-export default function Header() {
-    const t = useTranslations();
 
-    return (
-        <header  className="bg-white text-black py-4 px-6 md:px-8 flex items-center justify-between">
-        <Link className="flex items-center gap-2 font-bold text-lg" href="#">
-          <Logo />
-          
-        </Link>
-        <nav className="hidden md:flex items-center gap-6">
-          <Link className="hover:underline" href="#">
-            {t("site.header.product")}
-          </Link>
-          <Link className="hover:underline" href="#">
-          {t("site.header.about")}
-          </Link>
-          <Link className="hover:underline" href="#">
-          {t("site.header.contact")}
-          </Link>
-        </nav>
-        <Button className="md:hidden" variant="outline">
-          
-        </Button>
-      </header>
-    )
+export function Header() {
+ return (
+    <header className="flex items-center justify-between p-4 border-b">
+          <div className="flex items-center space-x-4">
+            <img src="/placeholder.svg" alt="Logo" className="h-12" />
+            <h1 className="text-2xl font-bold text-blue-900">GS</h1>
+          </div>
+          <nav className="flex space-x-4">
+            <a href="#" className="text-gray-700 hover:text-gray-900">
+              Home
+            </a>
+            <a href="#" className="text-gray-700 hover:text-gray-900">
+              Sobre Nós
+            </a>
+            <a href="#" className="text-gray-700 hover:text-gray-900">
+              Produtos
+            </a>
+            <a href="#" className="text-gray-700 hover:text-gray-900">
+              Contato
+            </a>
+            <a href="#" className="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
+              Loja Virtual
+            </a>
+          </nav>
+        </header>
+ )
 }

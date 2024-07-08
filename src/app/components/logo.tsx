@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Home from '../../../../../public/assets/Home.jpg'
+import Home from '../../../public/assets/Home.jpg'
 
 export default function Logo() {
     return (

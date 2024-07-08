@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import Home from '../../../../../public/assets/Home.jpg'
+import Home from '../../../public/assets/Home.jpg'
 
 export default function Footer() {
     const t = useTranslations()
