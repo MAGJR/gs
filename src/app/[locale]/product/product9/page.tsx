@@ -2,7 +2,7 @@ import CardComponent, { CardComponentBolsaTermica, CardComponentCapaTermica, Car
 import Image from "next/image";
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { cardConfig } from "@/config/card";
 import isolamentoTermicoVeiculos from '../../../../../public/assets/Isolamento-Termico-para-Veiculos_prin2.png'
 import IsolamentoTermicoVeiculos2 from '../../../../../public/assets/Isolamento-Termico-para-Veiculos_desc.png'
@@ -54,32 +54,32 @@ export default function Page ({params}: PageProps) {
         {
             id: 1,
             number: 1,
-            description: 'ideal para pequenas viagens'
+            description: 'ideal for small trips'
         },
         {
             id: 2,
             number: 2,
-            description: 'garanta até 24h'
+            description: 'guarantees up to 24 hours'
         },
         {
             id: 3,
             number: 3,
-            description: 'impede a troca de temperatura interior e exterior'
+            description: 'prevents temperature exchange between interior and exterior'
         },
         {
             id: 4,
             number: 4,
-            description: `substitui placas de isolamento e sistema de refrigeração`
+            description: 'replaces insulation panels and refrigeration systems'
         },
         {
             id: 5,
             number: 1,
-            description: 'camadas unidas por costuras de compressão'
+            description: 'layers welded together by compression seams'
         },
         {
             id: 6,
             number: 2,
-            description: 'revestimento em nylon impermeabilizado'
+            description: 'impermeable coating on nylon'
         },
        
     ]
@@ -87,26 +87,26 @@ export default function Page ({params}: PageProps) {
     const items: ItemsInfoProps[] = [
         {
             id: 1,
-            title: "Encaixe Perfeito",
-            description: "São fabricadas sob medida para um encaixe perfeito e para poder facilitar a movimentação dentro do baú frigorífico."
+            title: "Perfect Fit",
+            description: "They are manufactured to fit perfectly and to make it easy to move within the fridge compartment."
         },
         {
             id: 2,
-            title: "Leve",
-            description: "Fabricada em alumínio, é leve e fácil de operar."
+            title: "Lightweight",
+            description: "Made of aluminum, it is lightweight and easy to operate."
         },
         {
             id: 3,
-            title: "Revestimento",
-            description: "O revestimento é feito com lona de 530 micras, com tratamento retardante de chamas, antifúngico e bactericida."
+            title: "Coating",
+            description: "The coating is made with 530 micron nylon fabric, with fire-resistant treatment, fungicide, antibacterial agent."
         },
     ]
     
     return (
         <div className="w-full flex flex-col items-center justify-center">
                     AQUI É O BANNER
-        <div className="flex flex-col items-center justify-center pt-5 pb-8">   
-            <h1 className="text-3xl md:text-4xl font-bold mb-4"> Divisória Térmica Prateleira</h1>
+        <div className="flex flex-col items-center justify-center pt-5 mb-36">   
+            <CardTitle className=" mb-4">Thermal Divisional Shelf</CardTitle>
             <Image
             width={300} 
             src={divisoriaTermicaPrateleira} 
@@ -122,8 +122,8 @@ export default function Page ({params}: PageProps) {
             />
 
             <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">A DIVISÓRIA TÉRMICA É UTILIZADA PARA SEPARAR CARGAS CONGELADAS, RESFRIADAS E SECAS EM VEÍCULOS REFRIGERADOS. OTIMIZE SUA LOGÍSTICA TRANSPORTANDO MAIS DE UMA CARGA EM UM SÓ VEÍCULO.</h1>
-                <span className="mt-2">Utilizada principalmente por distribuidoras de alimentos refrigerados, com muitas paradas para diversas entregas durante a viagem. São fabricadas em detalhe para o encaixe perfeito nas prateleiras do baú. Geralmente esta divisória sai junto com o baú, na fábrica. Porém, com nossa equipe de engenharia, podemos fabricar a divisória prateleira para qualquer cliente do Brasil inteiro. Para este modelo, no entanto, as medidas corretas são essenciais.</span>
+                <CardTitle className="text-2xl md:text-2xl font-bold">THE DIVISIONAL THERMAL IS USED TO SEPARATE FROZEN, REFRIGERATED AND DRY LOADS IN REFRIGERATED VEHICLES. OPTIMIZE YOUR LOGISTICS BY TRANSPORTING MORE THAN ONE LOAD IN A SINGLE VEHICLE.</CardTitle>
+                <CardDescription className="mt-2">Especially used by food distributors, with many stops for different deliveries during the trip. They are manufactured in detail for perfect fitting in the shelves of the fridge. Generally, this division comes together with the fridge, in the factory. However, with our engineering team, we can manufacture the division for any client in Brazil. For this model, however, the correct measurements are essential.</CardDescription>
             </div>
 
         </div>
@@ -132,7 +132,7 @@ export default function Page ({params}: PageProps) {
          <CardComponentPrateleira items={cardConfig} />
             
             <div className="pt-8 text-center mb-8">
-                <h1 className="text-3xl md:text-4xl font-bold pb-10"> Vantagens</h1>
+                <h1 className="text-3xl md:text-4xl font-bold pb-10"> Benefits</h1>
                 <div className="flex items-center justify-center">
                     <div className="flex gap-2">
                        {items.map((descriptions) => (

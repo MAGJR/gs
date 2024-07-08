@@ -6,7 +6,7 @@ import Corousel1 from '../../../../../public/assets/carroussel1.png'
 import Corousel2 from '../../../../../public/assets/carroussel2.png'
 import Corousel3 from '../../../../../public/assets/carroussel3.png'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { cardConfig } from "@/config/card";
 import coberturaTermica from '../../../../../public/assets/Cobertura-Termica-para-Palete_desc.png'
 import CoberturaTermica from '../../../../../public/assets/CapaTermica.png'
@@ -55,32 +55,32 @@ export default function Page ({params}: PageProps) {
         {
             id: 1,
             number: 1,
-            description: 'ideal para pequenas viagens'
+            description: 'ideal for small trips'
         },
         {
             id: 2,
             number: 2,
-            description: 'garanta até 24h'
+            description: 'guarantees up to 24 hours'
         },
         {
             id: 3,
             number: 3,
-            description: 'impede a troca de temperatura interior e exterior'
+            description: 'prevents interior and exterior temperature exchange'
         },
         {
             id: 4,
             number: 4,
-            description: `substitui placas de isolamento e sistema de refrigeração`
+            description: 'replaces insulation panels and refrigeration system'
         },
         {
             id: 5,
             number: 1,
-            description: 'camadas unidas por costuras de compressão'
+            description: 'layers joined by compression seams'
         },
         {
             id: 6,
             number: 2,
-            description: 'revestimento em nylon impermeabilizado'
+            description: 'waterproof nylon coating'
         },
        
     ]
@@ -88,23 +88,23 @@ export default function Page ({params}: PageProps) {
     const items: ItemsInfoProps[] = [
         {
             id: 1,
-            title: "Facilidade",
-            description: "A instalação do bolsão térmico é super simples. Ao receber o seu bolsão, retire-o da embalagem, e fixe os ganchos em seu veículo. Quando não estiver em uso, ou quiser lava-lo, é só retira-lo facilmente."
+            title: "Convenience",
+            description: "Installing the thermal blanket is super simple. When you receive your blanket, remove it from the packaging and attach the hooks to your vehicle. When it's not in use or you want to wash it, just remove it easily."
         },
         {
             id: 2,
-            title: "Baixo custo",
-            description: "É a solução de isolamento térmico para veículos mais barata do mercado. Você poderá utilizar qualquer modelo de veículo, inclusive bagageiros de carros de passeio."
+            title: "Low cost",
+            description: "Our thermal insulation for vehicles is the most affordable on the market. You can use any model of vehicle, including passenger carrier trunks."
         },
         {
             id: 3,
-            title: "Sob medida",
-            description: "Podemos personalizar tamanhos que atendam especificamente o seu veículo, maximizando seus resultados, dentro do seu orçamento e necessidade. Por ser maleável, o tecido do bolsão se adapta a qualquer superfície."
+            title: "Custom made",
+            description: "We can customize sizes that specifically fit your vehicle, maximizing your results within your budget and need. Because it is flexible, the fabric of the blanket adapts to any surface."
         },
         {
             id: 4,
-            title: 'Leve',
-            description: 'Resistência e durabilidade também combinam com um produto leve. Utilizamos os melhores e mais resistentes materiais, que levam em conta, também, o peso. Peso baixo significa praticidade e agilidade.'
+            title: 'Lightweight',
+            description: 'Resistance and durability also combine with a lightweight product. We use the best and most resistant materials, which take into account weight. Light weight means practicality and agility.'
         }
         
     ]
@@ -112,8 +112,8 @@ export default function Page ({params}: PageProps) {
     return (
         <div className="w-full flex flex-col items-center justify-center">
                     AQUI É O BANNER
-        <div className="flex flex-col items-center justify-center pt-5 pb-8">   
-            <h1 className="text-3xl md:text-4xl font-bold mb-4"> Bolsão térmico</h1>
+        <div className="flex flex-col items-center justify-center pt-5 mb-36">   
+            <CardTitle className="mb-4"> Thermal blanket</CardTitle>
             <Image
             width={400} 
             src={isolamentoTermicoVeiculos} 
@@ -123,14 +123,14 @@ export default function Page ({params}: PageProps) {
         <div className="flex items-start gap-5 mr-auto pl-8 pb-8">
             
             <Image src={IsolamentoTermicoVeiculos2} 
-            width={400}
+            width={300}
             alt="teste" 
             className="rounded-md ml-5"
             />
 
             <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">DESENVOLVIDO PARA SER UTILIZADO NO TRANSPORTE DE PRODUTOS CONGELADOS E RESFRIADOS EM VEÍCULOS NÃO REFRIGERADO</h1>
-                <span className="mt-2">Veículos sem equipamento de refrigeração não conseguem manter a temperatura de mercadorias perecíveis. Para estes casos, a Soluforte desenvolveu o Bolsão Térmico, um isolamento térmico para veículo, removível, para o transporte de produtos congelados e resfriados, sem a utilização de sistemas de refrigeração.</span>
+                <CardTitle >DEVELOPED FOR USE IN THE TRANSPORT OF FROZEN AND COOLED PRODUCTS IN VEHICLES WITHOUT REFRIGERATION</CardTitle>
+                <CardDescription className="mt-2">Vehicles without refrigeration equipment cannot maintain the temperature of perishable goods. For these cases, Soluforte developed the Thermal Bag, a thermal insulation for vehicles, removable, for the transport of frozen and cooled products, without the use of refrigeration systems.</CardDescription>
             </div>
 
         </div>
@@ -139,7 +139,7 @@ export default function Page ({params}: PageProps) {
          <CardComponentBolsaTermica items={cardConfig} />
             
             <div className="pt-8 text-center mb-8">
-                <h1 className="text-3xl md:text-4xl font-bold pb-10"> Vantagens</h1>
+                <h1 className="text-3xl md:text-4xl font-bold pb-10"> Benefits</h1>
                 <div className="flex items-center justify-center">
                     <div className="flex gap-2">
                        {items.map((descriptions) => (
@@ -157,7 +157,7 @@ export default function Page ({params}: PageProps) {
                 </div>
             </div>
 
-                    <h1 className="text-3xl md:text-4xl font-bold"> Caracteristicas</h1>
+                    <h1 className="text-3xl md:text-4xl font-bold"> Characteristics</h1>
                     <div className="flex items-center mt-8 justify-between gap-8 bg-slate-100">
                     <div className="text-left ml-36 ">
                         {numbers.filter(number => [1, 2, 3, 4].includes(number.id)).map(number => (
@@ -182,8 +182,10 @@ export default function Page ({params}: PageProps) {
                     <Image src={IsolamentoTermicoVeiculosCompisition} width={500} alt='Image' />
                     
                 <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">Composição</h1>
-                <span className="mt-2 mb-8">No intuito de aumentar a durabilidade, facilitar a limpeza e diminuir o peso, a Soluforte trabalha com os melhores materiais na composição do bolsão térmico.</span>
+                <CardTitle>Composition</CardTitle>
+                <CardDescription className="mt-2 mb-4">In order to increase durability, ease cleaning and reduce weight, Soluforte works with the best materials in the thermal lining composition.</CardDescription>
+                <CardDescription className="mt-2 mb-4">For the coating, we use nylon, a material easy to clean, waterproof and lightweight.</CardDescription>
+                <CardDescription className="mt-2 mb-4">The internal thermal layers follow the same concept of lightness and durability, being joined by compression seams, ensuring long life to the product.</CardDescription>
                         {numbers.filter(number => [5, 6].includes(number.id)).map(number => (
                             <div key={number.id} className="flex items-center gap-2">
                             <div className="flex items-center justify-center mt-2 w-8 h-8 bg-blue-600 text-white font-bold rounded-br-lg rounded-tl-lg  ">

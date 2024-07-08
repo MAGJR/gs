@@ -2,7 +2,7 @@ import CardComponent, { CardComponentBolsaTermica, CardComponentCapaTermica } fr
 import Image from "next/image";
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { cardConfig } from "@/config/card";
 import IsolamentoTermicoVeiculos2 from '../../../../../public/assets/Isolamento-Termico-para-Veiculos_desc.png'
 import { TruckComponent } from "@/app/components/truck";
@@ -60,32 +60,32 @@ export default function Page ({params}: PageProps) {
         {
             id: 1,
             number: 1,
-            description: 'leve'
+            description: 'lightweight'
         },
         {
             id: 2,
             number: 2,
-            description: 'móvel'
+            description: 'movable'
         },
         {
             id: 3,
             number: 1,
-            description: 'estrutura em alumínio'
+            description: 'aluminum structure'
         },
         {
             id: 4,
             number: 2,
-            description: `preenchimento em eps`
+            description: 'eps filling'
         },
         {
             id: 5,
             number: 3,
-            description: 'reforço na base com chapa plástica'
+            description: 'base reinforcement with plastic sheet'
         },
         {
             id: 6,
             number: 4,
-            description: 'revestimento lona 550 micras'
+            description: 'nylon 550 micron lining'
         },
         
     ]
@@ -93,23 +93,23 @@ export default function Page ({params}: PageProps) {
     const items: ItemsInfoProps[] = [
         {
             id: 1,
-            title: "Leve",
-            description: "A divisória térmica móvel é leve e muito fácil de ser utilizada e movimentada, por conta da sua estrutura e preenchimento leve."
+            title: "Lightweight",
+            description: "The mobile thermal divider is lightweight and easy to use and move, due to its structure and light-weight filling."
         },
         {
             id: 2,
-            title: "Revestimento",
-            description: "Nossa divisória é revestida em lona auto-extinguível, com aditivos anti UV, antioxidante e antifungo, tornando-a muito mais resistente."
+            title: "Coating",
+            description: "Our thermal divider is coated with flame-retardant non-woven fabric, with UV-blocking agents, antioxidants and fungicides, making it much more resistant."
         },
         {
             id: 3,
-            title: "Customização",
-            description: "Além do tamanho, podemos colocar porta central ou lateral, kit de ventilação. O trilho pode ser superior ou lateral, tudo de acordo com o que melhor lhe atender."
+            title: "Customization",
+            description: "In addition to the size, we can put central or lateral door, ventilation kit. The track can be on top or side, depending on what best suits you."
         },
         {
             id: 4,
-            title: 'Estrutura em alúminio',
-            description: 'O grande diferencial da nossa divisória térmica móvel é a estrutura em alumínio e o carrinho em inox.'
+            title: 'Aluminum structure',
+            description: 'The big difference of our mobile thermal divider is the aluminum structure and the inox cart.'
         }
         
     ]
@@ -117,8 +117,8 @@ export default function Page ({params}: PageProps) {
     return (
         <div className="w-full flex flex-col items-center justify-center">
                     AQUI É O BANNER
-        <div className="flex flex-col items-center justify-center pt-5 pb-8">   
-            <h1 className="text-3xl md:text-4xl font-bold mb-4"> Divisória Térmica Móvel</h1>
+        <div className="flex flex-col items-center justify-center pt-5 mb-36">   
+            <CardTitle className="mb-4">Mobile Thermal Divider</CardTitle>
             <Image
             width={400} 
             src={HeroImg} 
@@ -134,8 +134,8 @@ export default function Page ({params}: PageProps) {
             />
 
             <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">A DIVISÓRIA TÉRMICA É UTILIZADA PARA SEPARAR CARGAS CONGELADAS, RESFRIADAS E SECAS EM VEÍCULOS REFRIGERADOS. OTIMIZE SUA LOGÍSTICA TRANSPORTANDO MAIS DE UMA CARGA EM UM SÓ VEÍCULO.</h1>
-                <span className="mt-2">Estruturada de alumínio, é utilizada principalmente em baús frigoríficos, e é instalada em um trilho padrão de 3 metros, dando flexibilidade no carregamento e descarregamento de mercadorias. Este modelo pode ser fabricado com porta, kit de ventilação e com trilho superior ou lateral.</span>
+                <CardTitle >The THERMAL DIVIDER is used to separate frozen, refrigerated and sealed loads in vehicles cooled. OPTIMIZE YOUR LOGISTICS BY TRANSPORTING MORE THAN ONE LOAD IN ONE VEHICLE.</CardTitle>
+                <CardDescription className="mt-2">Structured in aluminum, it is mainly used in refrigerated bays, and is installed on a standard 3-meter track, giving flexibility in loading and unloading goods. This model can be fabricated with a door, ventilation kit, and with an upper or lateral track.</CardDescription>
             </div>
 
         </div>
@@ -144,7 +144,7 @@ export default function Page ({params}: PageProps) {
          <CardComponent items={cardConfig} />
             
             <div className="pt-8 text-center mb-8">
-                <h1 className="text-3xl md:text-4xl font-bold pb-10"> Vantagens</h1>
+                <h1 className="text-3xl md:text-4xl font-bold pb-10"> Benefits</h1>
                 <div className="flex items-center justify-center">
                     <div className="flex gap-2">
                        {items.map((descriptions) => (
@@ -162,7 +162,7 @@ export default function Page ({params}: PageProps) {
                 </div>
             </div>
 
-                    <h1 className="text-3xl md:text-4xl font-bold"> Caracteristicas</h1>
+                    <h1 className="text-3xl md:text-4xl font-bold"> Characteristics</h1>
                     <div className="flex items-center mt-8 justify-between gap-8 bg-slate-100">
                     <div className="text-left ml-36 ">
                         {numbers.filter(number => [1, 2, 3, 4].includes(number.id)).map(number => (
@@ -187,8 +187,8 @@ export default function Page ({params}: PageProps) {
                     <Image src={divisoriaTermicaMovelComp} width={400} alt='Image' />
                     
                 <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">Composição</h1>
-                <span className="mt-2 mb-8">No intuito de aumentar a durabilidade, facilitar a limpeza e diminuir o peso, a Soluforte trabalha com os melhores materiais na composição do bolsão térmico.</span>
+                <CardTitle >Composition</CardTitle>
+                <CardDescription className="mt-2 mb-8">Model built with aluminum structure, light material that doesn&apos;t rust, and its structure is fixed to the vehicle through rails.</CardDescription>
                         {numbers.filter(number => [5, 6].includes(number.id)).map(number => (
                             <div key={number.id} className="flex items-center gap-2">
                             <div className="flex items-center justify-center mt-2 w-8 h-8 bg-blue-600 text-white font-bold rounded-br-lg rounded-tl-lg  ">

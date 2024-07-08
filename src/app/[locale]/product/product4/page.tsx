@@ -2,7 +2,7 @@ import CardComponent, { CardComponentBiPartida, CardComponentBolsaTermica, CardC
 import Image from "next/image";
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { cardConfig } from "@/config/card";
 import isolamentoTermicoVeiculos from '../../../../../public/assets/Isolamento-Termico-para-Veiculos_prin2.png'
 import IsolamentoTermicoVeiculos2 from '../../../../../public/assets/Isolamento-Termico-para-Veiculos_desc.png'
@@ -52,32 +52,32 @@ export default function Page ({params}: PageProps) {
         {
             id: 1,
             number: 1,
-            description: 'estrutura em alumínio'
+            description: 'aluminum structure'
         },
         {
             id: 2,
             number: 2,
-            description: 'produzidas sob medida'
+            description: 'custom-made'
         },
         {
             id: 3,
             number: 1,
-            description: 'estrutura de alumínio'
+            description: 'aluminum structure'
         },
         {
             id: 4,
             number: 2,
-            description: `revestimento com chapa de 4mm`
+            description: `4mm sheet coat`
         },
         {
             id: 5,
             number: 3,
-            description: 'esponja de alta densidade'
+            description: 'high-density sponge'
         },
         {
             id: 6,
             number: 4,
-            description: 'revestimento da esponja com lona 300 micras'
+            description: 'sponge coat with 300 micron cotton'
         },
        
     ]
@@ -85,18 +85,18 @@ export default function Page ({params}: PageProps) {
     const items: ItemsInfoProps[] = [
         {
             id: 1,
-            title: "Leve",
-            description: "Com a divisória de cargas secas, o operador logístico consegue maximizar a utilização dos veículos, e com isso, otimizar a operação."
+            title: "Lightweight",
+            description: "With load separators, logistics operators can maximize the use of vehicles, thus optimizing the operation."
         },
         {
             id: 2,
-            title: "Reforçada",
-            description: "Além da estrutura de alumínio, a divisória ainda conta com revestimento plástico de 4mm em cada lado."
+            title: "Reinforced",
+            description: "In addition to the aluminum structure, the load separator also has a 4mm plastic lining on each side."
         },
         {
             id: 3,
-            title: "Otimização Logística",
-            description: "Com a divisória de cargas secas, o operador logístico consegue maximizar a utilização dos veículos, e com isso, otimizar a operação."
+            title: "Logistics Optimization",
+            description: "With load separators, logistics operators can maximize the use of vehicles, thus optimizing the operation."
         },
        
         
@@ -105,8 +105,8 @@ export default function Page ({params}: PageProps) {
     return (
         <div className="w-full flex flex-col items-center justify-center">
                     AQUI É O BANNER
-        <div className="flex flex-col items-center justify-center pt-5 pb-8">   
-            <h1 className="text-3xl md:text-4xl font-bold mb-4"> Divisória Carga Seca Bipartida</h1>
+        <div className="flex flex-col items-center justify-center pt-5 mb-36">   
+            <CardTitle className="mb-4"> Load Divider Bipartite</CardTitle>
             <Image
             width={400} 
             src={divisoriaCargaSecaBipartida} 
@@ -122,8 +122,8 @@ export default function Page ({params}: PageProps) {
             />
 
             <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">AS DIVISÓRIAS SÃO UMA FERRAMENTA INDISPENSÁVEL NA GESTÃO DE SUA FROTA, GERANDO ECONOMIA E OTIMIZANDO A SUA OPERAÇÃO.</h1>
-                <span className="mt-2">No transporte de cargas, a divisória visa otimizar a logística de sua frota, separando diferentes cargas, maximizando o desempenho no transporte e reduzindo custos.</span>
+                <CardTitle >DIVISORS ARE AN IRREPLACEABLE TOOL IN THE MANAGEMENT OF YOUR FLEET, BRINGING ECONOMY AND OPTIMIZING YOUR OPERATION.</CardTitle>
+                <span className="mt-2">In the transportation of goods, the divider aims to optimize logistics in your fleet, separating different loads, maximizing performance in transport and reducing costs.</span>
             </div>
 
         </div>
@@ -132,7 +132,7 @@ export default function Page ({params}: PageProps) {
          <CardComponentBiPartida items={cardConfig} />
             
             <div className="pt-8 text-center mb-8">
-                <h1 className="text-3xl md:text-4xl font-bold pb-10"> Vantagens</h1>
+                <h1 className="text-3xl md:text-4xl font-bold pb-10">Benefits</h1>
                 <div className="flex items-center justify-center">
                     <div className="flex gap-2">
                        {items.map((descriptions) => (
@@ -150,7 +150,7 @@ export default function Page ({params}: PageProps) {
                 </div>
             </div>
 
-                    <h1 className="text-3xl md:text-4xl font-bold"> Caracteristicas</h1>
+                    <h1 className="text-3xl md:text-4xl font-bold"> Characteristics</h1>
                     <div className="flex items-center mt-8 justify-between gap-8 bg-slate-100">
                     <div className="text-left ml-36 ">
                         {numbers.filter(number => [1, 2].includes(number.id)).map(number => (
@@ -175,8 +175,16 @@ export default function Page ({params}: PageProps) {
                     <Image src={divisoriaCargaSecaBipartidaComp} width={400} alt='Image' />
                     
                 <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">Composição</h1>
-                <span className="mt-2 mb-8">No intuito de aumentar a durabilidade, facilitar a limpeza e diminuir o peso, a Soluforte trabalha com os melhores materiais na composição do bolsão térmico.</span>
+                <CardTitle className="text-2xl md:text-2xl font-bold">Composition</CardTitle>
+                <CardDescription className="mt-2 mb-4">
+                    In order to increase durability, simplify cleaning and reduce weight, Soluforte works with the best raw materials in the composition of its products.
+                </CardDescription>
+                <CardDescription className="mt-2 mb-4">
+                    For the coating, we use plastic sheets with 4mm thickness, and aluminum in the structure of the partition, easy-to-clean materials.
+                </CardDescription>
+                <CardDescription className="mt-2 mb-4">
+                    On the sides, high-density foam with 5cm thickness, and we coat it with 300 microns of fabric, which provides a better fit to the sides of the vehicle.
+                </CardDescription>
                         {numbers.filter(number => [3, 4, 5, 6].includes(number.id)).map(number => (
                             <div key={number.id} className="flex items-center gap-2">
                             <div className="flex items-center justify-center mt-2 w-8 h-8 bg-blue-600 text-white font-bold rounded-br-lg rounded-tl-lg  ">

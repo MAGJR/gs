@@ -6,7 +6,7 @@ import Corousel1 from '../../../../../public/assets/carroussel1.png'
 import Corousel2 from '../../../../../public/assets/carroussel2.png'
 import Corousel3 from '../../../../../public/assets/carroussel3.png'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { cardConfig } from "@/config/card";
 import coberturaTermica from '../../../../../public/assets/Cobertura-Termica-para-Palete_desc.png'
 import CoberturaTermica from '../../../../../public/assets/CapaTermica.png'
@@ -65,32 +65,32 @@ export default function Page ({params}: PageProps) {
         {
             id: 1,
             number: 1,
-            description: 'fixação por sistema de pressão'
+            description: 'fixation by pressure system'
         },
         {
             id: 2,
             number: 2,
-            description: '10mm de espessura'
+            description: '10mm thickness'
         },
         {
             id: 3,
             number: 3,
-            description: 'pesa apenas 7kg'
+            description: 'weighs only 7kg'
         },
         {
             id: 4,
             number: 4,
-            description: `não absorve umidade`
+            description: 'does not absorb moisture'
         },
         {
             id: 5,
             number: 1,
-            description: 'fixação por traverse palete'
+            description: 'fixation by pallete rail'
         },
         {
             id: 6,
             number: 2,
-            description: 'revestimento com nylon impermeabilizado'
+            description: 'coating with impermeable nylon'
         },
        
     ]
@@ -98,23 +98,23 @@ export default function Page ({params}: PageProps) {
     const items: ItemsInfoProps[] = [
         {
             id: 1,
-            title: "Leve",
-            description: "A mais leve das divisórias. Pesa apenas 7kg. É sinônimo de fácil instalação e manuseio."
+            title: "Light",
+            description: "The lightest of the thermal dividers. It weighs only 7kg. It is synonymous with easy installation and handling."
         },
         {
             id: 2,
-            title: "Praticidade",
-            description: "É fixada por um trava pallet de catraca, que é instalado nas laterais do veículo. Fácil de instalar. Fácil de retirar."
+            title: "Convenience",
+            description: "It is fixed by a pallet trailer for the vehicle, which is installed on the sides of the vehicle. Easy to install. Easy to remove."
         },
         {
             id: 3,
-            title: "Customização",
-            description: "Além do tamanho, ainda podemos fabricar com abertura central, com zíper ou velcro, bem como instalar o kit de ventilação, 12V ou 24V."
+            title: "Customization",
+            description: "Besides the size, we can also have it made with a central opening, zip or velcro, as well as install the ventilation kit, 12V or 24V."
         },
         {
             id: 4,
-            title: 'Otimização',
-            description: 'Por não possuir estrutura, a divisória térmica cortina pode ser instalada em veículos maiores ou menores, sendo ajustada apenas na catraca do trava.'
+            title: 'Optimization',
+            description: 'Because it does not have a structure, the thermal divider can be installed in larger or smaller vehicles, being adjusted only in the pallet trailer.'
         }
         
     ]
@@ -122,8 +122,8 @@ export default function Page ({params}: PageProps) {
     return (
         <div className="w-full flex flex-col items-center justify-center">
                     AQUI É O BANNER
-        <div className="flex flex-col items-center justify-center pt-5 pb-8">   
-            <h1 className="text-3xl md:text-4xl font-bold mb-4"> Divisória Térmica Cortina</h1>
+        <div className="flex flex-col items-center justify-center pt-5 mb-36">   
+            <CardTitle className="mb-4">Thermal Divider Curtain</CardTitle>
             <Image
             width={400} 
             src={divisoriaTermicaCortina} 
@@ -139,8 +139,8 @@ export default function Page ({params}: PageProps) {
             />
 
             <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">A DIVISÓRIA TÉRMICA É UTILIZADA PARA SEPARAR CARGAS CONGELADAS, RESFRIADAS E SECAS EM VEÍCULOS REFRIGERADOS. OTIMIZE SUA LOGÍSTICA TRANSPORTANDO MAIS DE UMA CARGA EM UM SÓ VEÍCULO.</h1>
-                <span className="mt-2">Utilizada principalmente por distribuidoras, que fazem o transporte por pouco tempo, geralmente completando a entrega dentro do mesmo dia. São leves, sem estrutura, presas ao teto através de uma trava, e de baixo custo. Também pode ser utilizada para proteção da carga na espera pelo descarregamento.</span>
+                <CardTitle >A THERMAL DIVIDER IS USED TO SEPARATE FROZEN, COOLED AND DRY GOODS IN REFRIGERATED VEHICLES. OPTIMIZE YOUR LOGISTICS BY TRANSPORTING MORE THAN ONE LOAD IN A VEHICLE. </CardTitle>
+                <CardDescription className="mt-2">Typically used by distributors, who transport for a short time, usually completing the delivery within the same day. They are lightweight, without structure, attached to the roof through a bracket, and have a low cost. They can also be used for cargo protection during the wait for unloading.</CardDescription>
             </div>
 
         </div>
@@ -149,7 +149,7 @@ export default function Page ({params}: PageProps) {
          <CardComponentDivisoriaCortina items={cardConfig} />
             
             <div className="pt-8 text-center mb-8">
-                <h1 className="text-3xl md:text-4xl font-bold pb-10"> Vantagens</h1>
+                <h1 className="text-3xl md:text-4xl font-bold pb-10"> Benefits</h1>
                 <div className="flex items-center justify-center">
                     <div className="flex gap-2">
                        {items.map((descriptions) => (
@@ -167,7 +167,7 @@ export default function Page ({params}: PageProps) {
                 </div>
             </div>
 
-                    <h1 className="text-3xl md:text-4xl font-bold"> Caracteristicas</h1>
+                    <h1 className="text-3xl md:text-4xl font-bold"> Characteristics</h1>
                     <div className="flex items-center mt-8 justify-between gap-8 bg-slate-100">
                     <div className="text-left ml-36 ">
                         {numbers.filter(number => [1, 2, 3, 4].includes(number.id)).map(number => (
@@ -192,8 +192,9 @@ export default function Page ({params}: PageProps) {
                     <Image src={divisoriaTermicaCortinaComp} width={300} alt='Image' />
                     
                 <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">Composição</h1>
-                <span className="mt-2 mb-8">No intuito de aumentar a durabilidade, facilitar a limpeza e diminuir o peso, a Soluforte trabalha com os melhores materiais na composição do bolsão térmico.</span>
+                <CardTitle >Composition</CardTitle>
+                <CardDescription className="mt-2 mb-4">The purpose of increasing durability, making cleaning easier, and reducing weight is to work with the best materials in the thermal curtain composition. In the reinforcement, we use nylon, a easy-to-clean, waterproof, and light material, which ensures a long life to the product.</CardDescription>
+                <CardDescription className="mt-2 mb-4">The internal thermal layers follow the same concept of lightness and durability, being joined by compression seams, guaranteeing a long life to the product.</CardDescription>
                         {numbers.filter(number => [5, 6].includes(number.id)).map(number => (
                             <div key={number.id} className="flex items-center gap-2">
                             <div className="flex items-center justify-center mt-2 w-8 h-8 bg-blue-600 text-white font-bold rounded-br-lg rounded-tl-lg  ">

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { cardConfig } from "@/config/card";
 import coberturaTermica from '../../../../../public/assets/Cobertura-Termica-para-Palete_desc.png'
 import CoberturaTermica from '../../../../../public/assets/CapaTermica.png'
@@ -52,55 +52,55 @@ export default function Page ({params}: PageProps) {
         {
             id: 1,
             number: 1,
-            description: 'Fechamento com Velcro'
+            description: 'Closure with Velcro'
         },
         {
             id: 2,
             number: 2,
-            description: 'Revestimento com material impermeável'
+            description: 'Impermeable coating'
         },
         {
             id: 3,
             number: 3,
-            description: 'Base térmica separada'
+            description: 'Separate thermal base'
         },
         {
             id: 4,
             number: 4,
-            description: 'visor para identificação'
+            description: 'View for identification'
         },
         {
             id: 5,
             number: 1,
-            description: 'Costuras de compresão'
+            description: 'Compression stitches'
         },
         {
             id: 6,
             number: 2,
-            description: 'Material impermeável'
+            description: 'Impermeable coating'
         },
         {
-            id: 6,
-            number: 4,
-            description: 'Revestimento lona 550 micras'
+            id: 7,
+            number: 2,
+            description: 'Lona 550 micras coating'
         }
     ]
 
     const items: ItemsInfoProps[] = [
         {
             id: 1,
-            title: "Eficiência",
-            description: "Fornece proteção passiva de carga sensível à temperatura durante todas as fases do ciclo logístico."
+            title: "Efficiency",
+            description: "Provides passive thermal protection of sensitive loads during all stages of the logistical cycle."
         },
         {
             id: 2,
-            title: "Customizada",
-            description: "Fabricamos tamanhos que atendam a sua operação logística, maximizando seus resultados dentro do seu orçamento e necessidade."
+            title: "Customization",
+            description: "We manufacture sizes that meet your logistics operation, maximizing your results within your budget and need."
         },
         {
             id: 3,
-            title: "Custo X benefício",
-            description: "A capa térmica para palete é uma solução com ótimo custo x benefício para proteção da sua carga paletizada. Tenha a segurança de um sistema ativo, com baixo valor de investimento."
+            title: "Cost-Benefit",
+            description: "The thermal sheet for pallets is a solution with excellent cost-benefit for load protection. Enjoy the security of an active system with low investment."
         },
         
     ]
@@ -108,8 +108,8 @@ export default function Page ({params}: PageProps) {
     return (
         <div className="w-full flex flex-col items-center justify-center">
                     AQUI É O BANNER
-        <div className="flex flex-col items-center justify-center pt-5 pb-8">   
-            <h1 className="text-3xl md:text-4xl font-bold mb-4"> Capa Térmica para Palete</h1>
+        <div className="flex flex-col items-center justify-center pt-5 mb-36">   
+            <CardTitle className="mb-4">Thermal Insulation Sheet for Pallets</CardTitle>
             <Image 
             src={coberturaTermicaMain} 
             width={500}
@@ -126,8 +126,10 @@ export default function Page ({params}: PageProps) {
             />
 
             <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">REVESTIMENTO TÉRMICO PARA MERCADORIAS PALETIZADAS QUE NECESSITAM DE CONTROLE DE TEMPERATURA NO PROCESSO LOGÍSTICO.</h1>
-                <span className="mt-2">Também conhecida como manta térmica para pallet, foi desenvolvida para proteger mercadorias paletizadas sensíveis à variação de temperatura. São produzidas de acordo com a necessidade do cliente, nas medidas que melhor se adequem à sua operação logística. A capa térmica para palete, ou cobertura térmica para pallet, ou simplesmente manta térmica, é uma solução viável para os transportadores de produtos perecíveis, diminuindo o risco de quebra de temperatura e consequente perda e contaminação de seus produtos.</span>
+                <CardTitle className="">THERMAL LINING FOR PALLETIZED GOODS REQUIRING TEMPERATURE CONTROL DURING THE LOGISTICS PROCESS.</CardTitle>
+                <CardDescription className="mt-2">
+                    Also known as thermal blanket for pallet, it was developed to protect palletized goods sensitive to temperature variation. They are produced according to the customer&apos;s need, in the measures that best fit their logistics operation. The thermal blanket for pallet, or thermal covering for pallet, or simply thermal blanket, is a viable solution for freight forwarders of perishable products, reducing the risk of temperature breakage and consequent loss and contamination of their products.
+                </CardDescription>
             </div>
 
         </div>
@@ -135,7 +137,7 @@ export default function Page ({params}: PageProps) {
 
          <CardComponentCapaTermica items={cardConfig} />
             <div className="pt-8 text-center mb-8">
-                <h1 className="text-3xl md:text-4xl font-bold pb-10"> Vantagens</h1>
+                <CardTitle className="text-3xl md:text-4xl font-bold pb-10"> Benefits</CardTitle>
                 <div className="flex items-center justify-center">
                     <div className="flex gap-2">
                        {items.map((descriptions) => (
@@ -153,7 +155,7 @@ export default function Page ({params}: PageProps) {
                 </div>
             </div>
 
-                    <h1 className="text-3xl md:text-4xl font-bold"> Caracteristicas</h1>
+                    <h1 className="text-3xl md:text-4xl font-bold">Characteristics</h1>
                     <div className="flex items-center mt-8 justify-between gap-8 bg-slate-100">
                     <div className="text-left ml-36 ">
                         {numbers.filter(number => [1, 2, 3, 4].includes(number.id)).map(number => (
@@ -178,9 +180,11 @@ export default function Page ({params}: PageProps) {
                     <Image src={CoberturaTermicaParaPalete} width={400} alt='Image' />
                     
                 <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">Composição</h1>
-                <span className="mt-2 mb-8">Modelo fabricado com estrutura de alumínio, material leve e que não enferruja, sua estrutura é fixada ao veículo através de trilhos.</span>
-                        {numbers.filter(number => [5, 7].includes(number.id)).map(number => (
+                <CardTitle>Composition</CardTitle>
+                <CardDescription className="mt-2 mb-4">To increase durability, ease cleaning, and reduce weight, Soluforte works with the best materials in the thermal cover composition.</CardDescription>
+                <CardDescription className=" mb-8">For the coating, we use nylon, a easy to clean, waterproof and lightweight material.</CardDescription>
+                <CardDescription className=" mb-8">The internal thermal layers follow the same concept of lightness and durability, being joined by compression seams, ensuring long life to the product.</CardDescription>
+                        {numbers.filter(number => [5, 6].includes(number.id)).map(number => (
                             <div key={number.id} className="flex items-center gap-2">
                             <div className="flex items-center justify-center mt-2 w-8 h-8 bg-blue-600 text-white font-bold rounded-br-lg rounded-tl-lg  ">
                                 <h1 >{number.number}</h1>

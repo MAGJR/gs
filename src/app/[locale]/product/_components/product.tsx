@@ -25,7 +25,7 @@ export function Product({ items }: ProductPageProps) {
             </CardContent>
             <CardFooter className="flex justify-center">
               <Link href={item.href}>
-                <Button>saiba mais</Button>
+                <Button>learn more</Button>
               </Link>
             </CardFooter>
           </Card>

@@ -2,7 +2,7 @@ import CardComponent, { CardComponentBolsaTermica, CardComponentCapaTermica, Car
 import Image from "next/image";
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { cardConfig } from "@/config/card";
 import IsolamentoTermicoVeiculos2 from '../../../../../public/assets/Isolamento-Termico-para-Veiculos_desc.png'
 import { TruckComponent } from "@/app/components/truck";
@@ -56,37 +56,37 @@ export default function Page ({params}: PageProps) {
         {
             id: 1,
             number: 1,
-            description: 'não absorve umidade'
+            description: 'does not absorb moisture'
         },
         {
             id: 2,
             number: 2,
-            description: '90mm de espessura'
+            description: '90mm thickness'
         },
         {
             id: 3,
             number: 3,
-            description: 'sem perfil de ferro ou plástico'
+            description: 'no iron or plastic profile'
         },
         {
             id: 4,
             number: 4,
-            description: `pesa apenas 12kg`
+            description: `weighs only 12kg`
         },
         {
             id: 5,
             number: 1,
-            description: 'material em eps e epe'
+            description: 'material in eps and epe'
         },
         {
             id: 6,
             number: 2,
-            description: 'espuṕmas laterais d28'
+            description: 'side spacers d28'
         },
         {
             id: 7,
             number: 3,
-            description: 'reforço na base com chapa plástica'
+            description: 'strengthening at the base with plastic plate'
         }
        
     ]
@@ -94,23 +94,23 @@ export default function Page ({params}: PageProps) {
     const items: ItemsInfoProps[] = [
         {
             id: 1,
-            title: "Leve",
-            description: "A divisória térmica bipartida Soluforte pesa apenas 12kg, o que facilita o manuseio por quem a utilizará."
+            title: "Lightweight",
+            description: "The bipartite thermal divider Soluforte weighs only 12kg, making it easier to handle."
         },
         {
             id: 2,
-            title: "Reforçado",
-            description: "Nossa divisória térmica para baú frigorífico é a única no mercado com 90mm de espessura. Isso significa entregar um produto muito melhor e mais resistente."
+            title: "Reinforced",
+            description: "Our thermal divider for freezer cabinet is the only one on the market with a thickness of 90mm. This means delivering a better and more resistant product."
         },
         {
             id: 3,
-            title: "Customização",
-            description: "Todas as divisórias térmicas para caminhão são fabricadas sob medida, para atender as especificações do seu veículo. Também pode ser fabricada com kit de ventilação."
+            title: "Customization",
+            description: "All thermal dividers for trucks are manufactured to order to meet the specifications of your vehicle. Also, it can be manufactured with ventilation kit."
         },
         {
             id: 4,
-            title: 'Economia de Combustível',
-            description: 'Com a divisória térmica para baú, o espaço que precisa ser refrigerado diminui e, consequentemente, o tempo que o equipamento precisa ficar ligado para manter a temperatura. Isso representa uma enorme economia.'
+            title: 'Fuel Economy',
+            description: 'With the thermal divider for cabinet, the space that needs to be cooled is reduced, and consequently, the time the equipment needs to be turned on to maintain temperature. This represents a huge fuel savings.'
         }
         
     ]
@@ -118,8 +118,8 @@ export default function Page ({params}: PageProps) {
     return (
         <div className="w-full flex flex-col items-center justify-center">
                     AQUI É O BANNER
-        <div className="flex flex-col items-center justify-center pt-5 pb-8">   
-            <h1 className="text-3xl md:text-4xl font-bold mb-4"> Divisória Térmica Bipartida</h1>
+        <div className="flex flex-col items-center justify-center pt-5 mb-36">   
+            <CardTitle className="mb-4">Bipartite Thermal Divider</CardTitle>
             <Image
             width={400} 
             src={divisoriaTermicaBipartidafrom} 
@@ -135,8 +135,8 @@ export default function Page ({params}: PageProps) {
             />
 
             <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">A DIVISÓRIA TÉRMICA É UTILIZADA PARA SEPARAR CARGAS CONGELADAS, RESFRIADAS E SECAS EM VEÍCULOS REFRIGERADOS. OTIMIZE SUA LOGÍSTICA TRANSPORTANDO MAIS DE UMA CARGA EM UM SÓ VEÍCULO.</h1>
-                <span className="mt-2">Estruturada e leve, a divisória térmica bipartida Soluforte é fabricada sob medida, com placas de EPS e EPE, tem espessura de 90mm e é revestida com lona vinílica 530 micras, pesa cerca de 12kg e pode ser utilizada em qualquer veículo refrigerado.</span>
+                <CardTitle >THE THERMAL DIVIDER IS USED TO SEPARATE FROZEN, COOLED AND DRY LOADS IN REFRIGERATED VEHICLES. OPTIMIZE YOUR LOGISTICS BY CARRYING MORE THAN ONE CARGO IN ONE VEHICLE.</CardTitle>
+                <CardDescription className="mt-2">Structured and light, the bipartite thermal divider Soluforte is manufactured to order, with foam panels and polyethylene tape, it has a thickness of 90mm and is covered with vinyl lona 530 micras, weighs around 12kg and can be used in any refrigerated vehicle.</CardDescription>
             </div>
 
         </div>
@@ -145,7 +145,7 @@ export default function Page ({params}: PageProps) {
          <CardComponentDivisoriaTermica items={cardConfig} />
             
             <div className="pt-8 text-center mb-8">
-                <h1 className="text-3xl md:text-4xl font-bold pb-10"> Vantagens</h1>
+                <CardTitle className="text-3xl md:text-4xl font-bold pb-10"> Benefits</CardTitle>
                 <div className="flex items-center justify-center">
                     <div className="flex gap-2">
                        {items.map((descriptions) => (
@@ -163,7 +163,7 @@ export default function Page ({params}: PageProps) {
                 </div>
             </div>
 
-                    <h1 className="text-3xl md:text-4xl font-bold"> Caracteristicas</h1>
+                    <h1 className="text-3xl md:text-4xl font-bold"> Characteristics</h1>
                     <div className="flex items-center mt-8 justify-between gap-8 bg-slate-100">
                     <div className="text-left ml-36 ">
                         {numbers.filter(number => [1, 2, 3, 4].includes(number.id)).map(number => (
@@ -188,8 +188,8 @@ export default function Page ({params}: PageProps) {
                     <Image src={divisoriaTermicaBipartidaNumber} width={400} alt='Image' />
                     
                 <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">Composição</h1>
-                <span className="mt-2 mb-8">No intuito de aumentar a durabilidade, facilitar a limpeza e diminuir o peso, a Soluforte trabalha com os melhores materiais na composição do bolsão térmico.</span>
+                <CardTitle >Composition</CardTitle>
+                <CardDescription className="mt-2 mb-8">Designed for separation of loads in refrigerated trucks. The robust structure is produced by the union of EPS and EPE panels, with lateral foam D28.</CardDescription>
                         {numbers.filter(number => [5, 6].includes(number.id)).map(number => (
                             <div key={number.id} className="flex items-center gap-2">
                             <div className="flex items-center justify-center mt-2 w-8 h-8 bg-blue-600 text-white font-bold rounded-br-lg rounded-tl-lg  ">

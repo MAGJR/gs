@@ -6,7 +6,7 @@ import Corousel1 from '../../../../../public/assets/carroussel1.png'
 import Corousel2 from '../../../../../public/assets/carroussel2.png'
 import Corousel3 from '../../../../../public/assets/carroussel3.png'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { cardConfig } from "@/config/card";
 import { TruckComponent } from "@/app/components/truck";
 import divisoriaTermicaGancheira from '../../../../../public/assets/Divisoria-Termica-Gancheira_prin1.png'
@@ -49,40 +49,40 @@ export default function Page ({params}: PageProps) {
         {
             id: 1,
             number: 1,
-            description: 'TAMPA BASCULANTE'
+            description: 'FLOOR LIFTING'
         },
         {
             id: 2,
             number: 2,
-            description: 'ESTRUTURA EM ALUMÍNIO'
+            description: 'ALUMINUM STRUCTURE'
         },
         {
             id: 3,
             number: 3,
-            description: 'OPÇÃO DE REFORÇO EM PP'
+            description: 'OPTION OF REINFORCEMENT IN PP'
         },
     ]
 
     const items: ItemsInfoProps[] = [
         {
             id: 1,
-            title: "Otimização Logística",
-            description: "Toda operação logística que utiliza divisória térmica consegue otimizar o uso de seus caminhões e diversificar suas cargas, melhorando a utilização dos veículos em cada viagem."
+            title: "Logistics Optimization",
+            description: "Every logistics operation that uses thermally insulated cabinet can optimize the use of their trucks and diversify their loads, improving the utilization of vehicles in each trip."
         },
         {
             id: 2,
-            title: "Economia",
-            description: "Com o uso da divisória térmica, o espaço que deve ser refrigerado diminui, e com isso, diminui também o uso do aparelho de refrigeração, o que gera um ganho operacional com diminuição dos custos."
+            title: "Economy",
+            description: "With the use of thermally insulated cabinet, the space that needs to be refrigerated is reduced, and with this, the use of the refrigeration device is reduced, resulting in operational cost reduction."
         },
         {
             id: 3,
-            title: "Customização",
-            description: "Cada produto é fabricado sob medida, de acordo com as medidas do veículo que a divisória será utilizada."
+            title: "Customization",
+            description: "Each product is manufactured to fit the specific dimensions of the vehicle the cabinet will be used on."
         },
         {
             id: 4,
-            title: 'Leve',
-            description: 'Com a estrutura fabricada em alumínio, além da durabilidade, a divisória também se torna leve e fácil de ser manejada.'
+            title: 'Lightweight',
+            description: 'Besides durability, the structure fabricated in aluminum also becomes lightweight and easy to handle.'
         }
         
     ]
@@ -90,8 +90,8 @@ export default function Page ({params}: PageProps) {
     return (
         <div className="w-full flex flex-col items-center justify-center">
                     AQUI É O BANNER
-        <div className="flex flex-col items-center justify-center pt-5 pb-8">   
-            <h1 className="text-3xl md:text-4xl font-bold mb-4"> Divisória Térmica Gancheira</h1>
+        <div className="flex flex-col items-center justify-center mt-10 mb-36">   
+            <CardTitle className="mb-4"> Insulated Partition for Gantries </CardTitle>
             <Image
             width={400} 
             src={divisoriaTermicaGancheira} 
@@ -107,8 +107,8 @@ export default function Page ({params}: PageProps) {
             />
 
             <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">A DIVISÓRIA TÉRMICA É UTILIZADA PARA SEPARAR CARGAS CONGELADAS, RESFRIADAS E SECAS EM VEÍCULOS REFRIGERADOS. OTIMIZE SUA LOGÍSTICA TRANSPORTANDO MAIS DE UMA CARGA EM UM SÓ VEÍCULO.</h1>
-                <span className="mt-2">Para o uso em carretas gancheiras, com uma parte basculante para ser armazenada junto ao equipamento de refrigeração. São fabricadas com estrutura em alumínio, revestidas com lona de gramatura 530, com reforço na base com plástico. Fabricação sob medida.</span>
+                <CardTitle >THE THERMAL DIVIDER IS USED TO SEPARATE FROZEN, REFRIGERATED AND DRY GOODS IN REFRIGERATED TRUCKS. OPTIMIZE YOUR LOGISTICS BY CARRYING MORE THAN ONE LOAD IN A TRUCK.</CardTitle>
+                <CardDescription className="mt-2">Made for use in conveyor belt gantry, with a movable part to be stored alongside the refrigeration equipment. Structured in aluminum, covered with 530-gram cloth, with reinforcement at the base with plastic. Custom-made.</CardDescription>
             </div>
 
         </div>
@@ -117,7 +117,7 @@ export default function Page ({params}: PageProps) {
          <CardComponentGancheira items={cardConfig} />
             
             <div className="pt-8 text-center mb-8">
-                <h1 className="text-3xl md:text-4xl font-bold pb-10"> Vantagens</h1>
+                <h1 className="text-3xl md:text-4xl font-bold pb-10"> Benefits</h1>
                 <div className="flex items-center justify-center">
                     <div className="flex gap-2">
                        {items.map((descriptions) => (
@@ -135,7 +135,7 @@ export default function Page ({params}: PageProps) {
                 </div>
             </div>
 
-                    <h1 className="text-3xl md:text-4xl font-bold"> Caracteristicas</h1>
+                    <h1 className="text-3xl md:text-4xl font-bold"> Characteristics</h1>
                     <div className="flex items-center mt-8 justify-between gap-8 bg-slate-100">
                     <div className="text-left ml-36 ">
                         {numbers.filter(number => [1, 2, 3, 4].includes(number.id)).map(number => (
@@ -156,11 +156,11 @@ export default function Page ({params}: PageProps) {
                     />
                     </div>
                 </div>
-                <div className="flex gap-5 mr-auto pl-8 pt-8 items-center ml-8 mt-8">
+                <div className="flex items-center justify-center mt-10">
                     
                 <div className="flex flex-col" style={{maxWidth: "600px"}}>
-                <h1 className="text-2xl md:text-2xl font-bold">Composição</h1>
-                <span className="mt-2 mb-8">No intuito de aumentar a durabilidade, facilitar a limpeza e diminuir o peso, a Soluforte trabalha com os melhores materiais na composição de seus produtos. A estrutura é em alumínio, a lona possui gramatura de 530, as barras de proteção laterais são em alumínio, o kit ventilação foi desenvolvido por nossa equipe de engenharia para dar melhor acabamento ao produto.</span>
+                <CardTitle >Composition</CardTitle>
+                <CardDescription className="mt-2 mb-8">With the intention of increasing durability, making cleaning easier and reducing weight, Soluforte works with the best materials in the composition of its products. The structure is in aluminum, the net has a gramage of 530, the lateral protection bars are in aluminum, the ventilation kit was developed by our engineering team to give better finish to the product.</CardDescription>
                         
                 </div>
                 <div>

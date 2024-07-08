@@ -4,67 +4,67 @@ import { CardInfos } from "@/types/card";
 export const cardConfig: CardInfos = {
     mainHome : [
         {
-            title: 'O que isso significa para você?',
-            description: 'Economia financeira na diminuição de produtos estragados e danificados por variações de temperatura em trânsito. Com nossa experiência, podemos ajudá-lo em sua operação logística, com a solução adequada para proteger sua carga.',
-            subdescription: 'Por sua estrutura leve, em alumínio, torna o trabalho do dia a dia mais prático e fácil. O revestimento em lona auto-extinguível, com aditivos anti UV, antioxidante e antifungo que aumentam a resistência do produto mesmo sob variações de temperatura e ação de intempéries, torna ainda mais resistente e firme a nossa divisória.'
+            title: 'What does that mean to you?',
+            description: 'Financial savings in the reduction of damaged and damaged goods due to temperature variations in transport. With our experience, we can help you in your logistics operation, with the appropriate solution to protect your cargo.',
+            subdescription: 'Due to its light structure, in aluminum, it makes everyday work more practical and easy. The self-extinguishing fabric coating, with UV-absorbing, antioxidant, antifungal additives, and anti-fungal agents that increase the resistance of the product even under temperature variations and weather actions, makes it even stronger and more solid.'
         }
     ],
     mainProduct : [
         {
-            title: 'Atender o cliente é o nosso lema',
-            description: 'A GS nasceu em 1982, e mantêm-se no mercado porque persegue um objetivo claro: em parceria com os clientes, desenvolver soluções para os problemas e gargalos logísticos. Dos problemas apresentados pelos nossos clientes em seus desafios diários é que nascem e se desenvolvem os nossos produtos.',
-            subdescription: 'A Soluforte fabrica e comercializa lona térmica, divisória térmica, cobertura térmica para pallet e bolsões térmicos.'
+            title: 'Our motto is to serve the customer',
+            description: 'GS was founded in 1982 and it is still in the market because it pursues a clear objective: in partnership with the customers, to develop solutions for the logistic issues and bottlenecks they face. From the problems presented by our customers in their daily challenges is that our products are born and developed.',
+            subdescription: 'Soluforte produces and commercializes thermal insulation fabric, thermal division, thermal pallet cover and thermal bags.'
         }
     ],
     productCapaTermica : [
         {
-            title: 'O que isso significa para você?',
-            description: 'Utilizada para o transporte de mercadorias paletizadas, é recomendada para o transporte terrestres e aéreo, protegendo a carga por até 44h sem necessidade de veículo refrigerado. É um grande aliado para o transporte aéreo, nas exportações de perecíveis, ou na exportação de medicamentos, quando a mercadoria precisa de proteção contra as mudanças de temperatura no processo logístico.'
+            title: 'What does that mean to you?',
+            description: 'Used for the transport of palletized goods, it is recommended for land and air transport, protecting the cargo for up to 44 hours without the need for a refrigerated vehicle. It is a great ally for air transport, especially for the export of perishable goods, or in the export of medicines, when the goods need protection against temperature changes in the logistical process.'
         }
     ],
     productLonaTermica: [
         {
-            title : 'O que isso significa para você?',
-            description: 'O aspecto mais importante da lona térmica, é a manutenção e o controle de temperatura efetivo, com um material leve, flexível e durável. As camadas de nylon garantem uma longa vida útil, e as camadas térmicas restringem a transferência de calor e a troca de temperatura. Produzidas ao longo de 12 anos de desenvolvimento contínuo, a tecnologia da lona térmica Soluforte oferece eficácia comprovada no mundo real.'
+            title : 'What does that mean to you?',
+            description: `The most important aspect of the thermal bag is the maintenance and control of temperature, with a lightweight, flexible, and durable material. The nylon layers ensure a long lifespan, and the thermal layers restrict heat transfer and temperature exchange. Produced over 12 years of continuous development, Soluforte's thermal bag technology offers proven effectiveness in the real world.`
         }
     ],
     productBolsaTermica: [
         {
-            title: 'O que isso significa para você?',
-            description: 'O Bolsão Térmico é utilizado, principalmente, por pequenos transportadores, para o trabalho no dia a dia, fazendo pequenas entregas. Nosso isolamento térmico em formato de bolsão, mantêm a temperatura do perecível sem a necessidade de equipamento de refrigeração. Nossos testes em laboratório especializado resultaram em até 24 horas de proteção de mercadorias perecíveis em veículos não refrigerados, utilizando apenas a nossa solução como isolamento.'
+            title: 'What does that mean to you?',
+            description: 'The Thermal Bag is used mainly by small transport companies to work on a daily basis, making small deliveries. Our thermal insulation in the form of a bag maintains the temperature of perishable goods without the need for refrigeration. Our laboratory tests have resulted in up to 24 hours of protection for perishable goods in non-refrigerated vehicles, using only our solution as insulation.'
         }
     ],
     productBiPartida: [
         {
-            title: 'O que isso significa para você?',
-            description: 'Ao possibilitar a divisão de cargas, a divisória de carga seca otimiza a logística da sua empresa, possibilitando carregar duas ou mais carga em cada veículo.',
-            subdescription: 'o Controle de custos e a otimização logística fazem toda diferença no resultado da empresa em tempos de competitividade global. As divisórias de carga seca são aliadas na gestão da frota e na maximização dos resultados para o operador logístico.'
+            title: 'What does that mean to you?',
+            description: 'By allowing the division of loads, the division of load reduces logistics costs, allowing two or more loads to be carried on each vehicle.',
+            subdescription: `Cost control and logistics optimization make all the difference in the company's results in times of global competition. Load division is an ally in the management of the fleet and in the maximization of results for the logistics operator.`
         }
     ],
     productDivisoriaTermica: [
         {
-            title: 'O que isso significa para você?',
-            description: 'Ao possibilitar a divisão de cargas, a divisória térmica otimiza a logística da sua empresa, possibilitando carregar duas ou mais cargas em cada veículo.',
-            subdescription: 'Outra excelente utilização da divisória térmica é na questão de veículos parados à espera de descarregamento. Quando há uma demora no descarregar, a carga pode sofrer avarias. Com o uso da divisória, mesmo com o caminhão aberto, têm-se uma barreira, impedindo que o frio saia do veículo, e com isso preservando a carga.'
+            title: 'What does that mean to you?',
+            description: 'By allowing the division of loads, the division of load reduces logistics costs, allowing two or more loads to be carried on each vehicle.',
+            subdescription: 'Another excellent use of the thermal division is in the matter of stopped vehicles waiting for unloading. When there is a delay in unloading, the cargo may suffer damage. With the use of the division, even when the truck is open, there is a barrier preventing cold air from entering the vehicle, and with it preserving the cargo.'
         }
     ],
     productDivisoriaCortina: [
         {
-            title: 'O que isso significa para você?',
-            description: 'Economia financeira na diminuição de produtos estragados e danificados por variações de temperatura em trânsito. Com nossa experiência, podemos ajudá-lo em sua operação logística, com a solução adequada para proteger sua carga.',
-            subdescription: 'Autonomia no processo de uso da divisória, sendo que, pelo peso leve da divisória, pode ser operada por apenas uma pessoa, sendo facilmente instalada e facilmente guardada quando não está em uso.'
+            title: 'What does that mean to you?',
+            description: 'The great financial gain in the thermally insulated shelf is the possibility of transporting loads of different temperatures in a single vehicle. This is not different with the thermally insulated cabinet: economy in logistics optimization and reduction of the use of the refrigeration device.',
+            subdescription: 'Autonomy in the use of the thermal divider, as it is lightweight and can be operated by only one person, easily installed and easily stored when not in use.'
         }
     ],
     productGancheira: [
         {
-            title: 'O que isso significa para você?',
-            description: 'O grande ganho da divisória térmica na logística refrigerada é a possibilidade de transportar cargas de diferentes temperaturas em um mesmo veículo. Não é diferente com a divisória para veículos gancheiros: economia financeira na otimização logística e com a diminuição do tempo de uso do aparelho de refrigeração.'
+            title: 'What does that mean to you?',
+            description: 'The great gain of the thermally insulated shelf in refrigerated logistics is the possibility of transporting loads of different temperatures in a single vehicle. This is not different with the thermally insulated cabinet: economy in logistics optimization and reduction of the use of the refrigeration device.'
         }
     ],
     productPrateleira: [
         {
-            title: 'O que isso significa para você?',
-            description: 'A divisória prateleira é fabricada para uma operação muito específica, e deve ser fabricada observando cada medida para o perfeito encaixe e a melhor utilização pelo funcionário encarregado pelas entregas. É uma solução que otimiza a operação logística oportunizando a entrega de produtos de diferentes temperaturas, tais como congelados e resfriados.'
+            title: 'What does that mean to you?',
+            description: 'The thermally insulated shelf is manufactured for a very specific operation and should be manufactured after observing each measurement to ensure a perfect fit and optimal use by the person responsible for deliveries. It is a solution that optimizes logistics operations by enabling the delivery of products of different temperatures, such as frozen and chilled.'
         }
     ]
 }

@@ -1,5 +1,5 @@
 'use client'
-import { Header } from "./_components/header"; 
+
 import Timeline from "@/app/components/time-line";
 import Image from "next/image";
 import Divisor from '../../../../public/assets/divisor.png'
@@ -9,6 +9,7 @@ import { TruckComponent } from "@/app/components/truck";
 import Truck from '../../../../public/assets/truck.png'
 import Airplane from '../../../../public/assets/aviao.png'
 import Ship from '../../../../public/assets/navio.png'
+import Home from '../../../../public/assets/hero.png'
 
 export default function Page() {
     return (
@@ -30,7 +31,7 @@ export default function Page() {
               
             </div>
                 <Image 
-                src={Truck} 
+                src={Home} 
                 width={500}
                 alt="Truck" 
                 className="rounded-lg"

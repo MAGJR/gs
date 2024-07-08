@@ -15,71 +15,71 @@ export const productConfig: ProductsInfo = {
     mainProduct : [
         {
             id: 1,
-            title: 'Capa térmica',
-            description: 'Também conhecida como manta térmica para pallet, foi desenvolvida para proteger mercadorias...',
+            title: 'Thermal Cover',
+            description: 'Also known as thermal blanket for pallets, it was developed to protect merchandise during transportation...',
             image: capaTermica,
             href: '/en/product/product1'
         } ,
         {
             id: 2,
-            title: 'LONA TÉRMICA',
-            description: 'A Lona Térmica Soluforte é um material de isolação multicamada desenvolvido com um sistema...',
+            title: 'Thermal Blanket',
+            description: 'The Thermal Blanket Soluforte is a multi-layered insulation material developed with a system...',
             image: imageCapaTermica,
             href: '/en/product/product2'
 
         },
         {
             id: 3,
-            title: 'BOLSÃO TÉRMICO',
-            description: 'Veículos sem equipamento de refrigeração não conseguem manter a temperatura de mercadorias...',
+            title: 'Thermal Cargo',
+            description: 'Vehicles without refrigeration equipment cannot maintain the temperature of merchandise...',
             image: isolamentoTermico,
             href: '/en/product/product3'
 
         },
         {
             id: 4,
-            title: 'DIVISÓRIA CARGA SECA BIPARTIDA',
-            description: 'No transporte de cargas, a divisória visa otimizar a logística de sua frota, separando diferentes...',
+            title: 'Bipartite Dry Cargo Division',
+            description: 'In cargo transportation, the division aims to optimize the logistics of your fleet, separating different...',
             image: divisoriaCargaSeca,
             href: '/en/product/product4'
 
         },
         {
             id: 5,
-            title: 'DIVISÓRIA TÉRMICA BIPARTIDA',
-            description: 'Estruturada e leve, a divisória térmica bipartida Soluforte é fabricada sob medida, com placas...',
+            title: 'Bipartite Thermal Division',
+            description: 'Light and structured, the bipartite thermal division Soluforte is made to order, with plates...',
             image: divisorBipartida,
             href: '/en/product/product5'
 
         },
         {
             id: 6,
-            title: 'DIVISÓRIA TÉRMICA CORTINA',
-            description: 'Utilizada principalmente por distribuidoras, que fazem o transporte por pouco tempo, geralmente...',
+            title: 'Thermal Curtain Division',
+            description: 'Used mainly by distributors, who make transportation for short periods of time, usually...',
             image: divisoriaCortina,
             href: '/en/product/product6'
 
         },
         {
             id: 7,
-            title: 'DIVISÓRIA TÉRMICA MÓVEL',
-            description: 'Estruturada de alumínio, é utilizada principalmente em baús frigoríficos, e é instalada em um...',
+            title: 'Mobile Thermal Division',
+            description: 'Aluminum structured, it is mainly used in refrigerated containers, and is installed on a...',
             image: divisãoTermica,
             href: '/en/product/product7'
 
         },
         {
             id: 8,
-            title: 'DIVISÓRIA TÉRMICA GANCHEIRA',
-            description: 'Para o uso em carretas gancheiras, com uma parte basculante para ser armazenada junto ao...',
+            title: 'Thermal Gantry Division',
+            description: 'For use in gantry trucks, with a hinged part to be stored next to the...',
             image: divisoriaGancheira,
             href: '/en/product/product8'
 
         },
         {
             id: 9,
-            title: 'DIVISÓRIA TÉRMICA PRATELEIRA',
-            description: 'Utilizada principalmente por distribuidoras de alimentos refrigerados, com muitas paradas para...',
+            title: 'Thermal Plate Division',
+            description: 'Used mainly by refrigerated food distributors, with many stops for...',
             image: divisoriaPrateleira,
             href: '/en/product/product9'
 
