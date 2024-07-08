@@ -13,7 +13,7 @@ export function Header() {
               Home
             </a>
             <a href="#" className="text-gray-700 hover:text-gray-900">
-              Sobre Nós
+              Sobre Nóses
             </a>
             <a href="#" className="text-gray-700 hover:text-gray-900">
               Produtos
