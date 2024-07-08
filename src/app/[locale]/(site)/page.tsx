@@ -9,7 +9,6 @@ import { TruckComponent } from "@/app/components/truck";
 import Truck from '../../../../public/assets/truck.png'
 import Airplane from '../../../../public/assets/aviao.png'
 import Ship from '../../../../public/assets/navio.png'
-import Home from '../../../../public/assets/hero.png'
 
 export default function Page() {
     return (
@@ -31,7 +30,7 @@ export default function Page() {
               
             </div>
                 <Image 
-                src={Home} 
+                src={Truck} 
                 width={500}
                 alt="Truck" 
                 className="rounded-lg"
