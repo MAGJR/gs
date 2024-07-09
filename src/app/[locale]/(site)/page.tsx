@@ -10,7 +10,7 @@ import Truck from '../../../../public/assets/truck.jpg'
 import Airplane from '../../../../public/assets/aviao.png'
 import Ship from '../../../../public/assets/navio.png'
 import Home from '../../../../public/assets/homeTruck.png'
-import { CardDescription, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator"
 
 export default function Page() {
@@ -99,20 +99,28 @@ export default function Page() {
           <TruckComponent />
           <Separator className="my-36" />
           <Timeline />
-          <div className="flex justify-between items-center bg-gray-100 p-8 rounded-xl shadow-lg">
-      <div className="w-1/3 text-center">
-        <h2 className="text-2xl font-bold text-blue-900">Mission</h2>
-        <p className="mt-4 text-gray-700">Develop customized solutions to meet customer needs, with quality and efficiency.</p>
+          <Separator className="my-36" />
+
+      <div className="flex justify-between items-stretch bg-gray-100 p-8 rounded-xl shadow-lg">
+        <div className="w-1/3 p-4">
+          <div className="flex flex-col items-center">
+            <h2 className="text-2xl font-bold text-blue-900">Mission</h2>
+            <p className="mt-4 text-gray-700">Develop customized solutions to meet customer needs, with quality and efficiency.</p>
+          </div>
+        </div>
+        <div className="w-1/3 p-4 border-l border-r">
+          <div className="flex flex-col items-center">
+            <h2 className="text-2xl font-bold text-blue-900">Vision</h2>
+            <p className="mt-4 text-gray-700">To be the reference company in the industry, recognized as the best option by customers, employees, suppliers, and society as a whole.</p>
+          </div>
+        </div>
+        <div className="w-1/3 p-4">
+          <div className="flex flex-col items-center">
+            <h2 className="text-2xl font-bold text-blue-900">Values</h2>
+            <p className="mt-4 text-gray-700">Integrity, commitment, human valuation, achievement of results, continuous improvement of processes, innovation, respect for the environment.</p>
+          </div>
+        </div>
       </div>
-      <div className="w-1/3 text-center border-l border-r px-4">
-        <h2 className="text-2xl font-bold text-blue-900">Vision</h2>
-        <p className="mt-4 text-gray-700">To be the reference company in the industry, recognized as the best option by customers, employees, suppliers, and society as a whole.</p>
-      </div>
-      <div className="w-1/3 text-center">
-        <h2 className="text-2xl font-bold text-blue-900">Values</h2>
-        <p className="mt-4 text-gray-700">Integrity, commitment, human valuation, achievement of results, continuous improvement of processes, innovation, respect for the environment.</p>
-      </div>
-    </div>
         </main>
       </div>
     )
