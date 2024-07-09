@@ -6,7 +6,7 @@ import { Clock, Earth, Truck } from "lucide-react";
 
 export function TruckComponent () {
     return (
-        <div className="grid">
+        <div className="grid mb-10 mt-10">
             <div className="flex space-x-4 text-left">
         <Card className="">
             <CardContent className="flex flex-col items-center justify-center">
