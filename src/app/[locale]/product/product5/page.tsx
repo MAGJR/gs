@@ -117,7 +117,7 @@ export default function Page ({params}: PageProps) {
     
     return (
         <div className="w-full flex flex-col items-center justify-center">
-                    AQUI É O BANNER
+                   
         <div className="flex flex-col items-center justify-center pt-5 mb-36">   
             <CardTitle className="mb-4">Bipartite Thermal Divider</CardTitle>
             <Image
