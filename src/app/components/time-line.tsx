@@ -71,7 +71,7 @@ export default function Timeline() {
               <button
                 key={index}
                 onClick={() => setSelectedEvent(event)}
-                className={`bg-white border-2 ${selectedEvent === event ? 'bg-blue-500 border-black' : 'border-black '} p-6 rounded-full w-6 h-6 flex items-center justify-center text-black font-bold`}
+                className={`bg-white border-2 ${selectedEvent === event ? 'bg-blue-400 border-blue-500' : 'border-black '} p-6 rounded-full w-6 h-6 flex items-center justify-center text-black font-bold`}
               >
                 {event.year}
               </button>
