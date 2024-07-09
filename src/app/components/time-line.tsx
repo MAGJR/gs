@@ -56,10 +56,11 @@ const events: Event[] = [
 
 export default function Timeline() {
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
-
+  
+  
   return (
     <div className="container mx-auto px-4 max-w-3xl">
-      <h1 className="text-2xl font-bold mb-4">Nossa história</h1>
+      <h1 className="text-2xl font-bold mb-4">We history</h1>
       <div className="flex flex-col gap-4">
         <div className="relative">
           <div className="absolute inset-0 flex items-center justify-center">
@@ -70,7 +71,7 @@ export default function Timeline() {
               <button
                 key={index}
                 onClick={() => setSelectedEvent(event)}
-                className="bg-white border-2 border-blue-500 rounded-full w-8 h-8 flex items-center justify-center text-blue-500 font-bold"
+                className={`bg-white border-2 ${selectedEvent === event ? 'bg-blue-500 border-black' : 'border-black '} p-6 rounded-full w-6 h-6 flex items-center justify-center text-black font-bold`}
               >
                 {event.year}
               </button>
