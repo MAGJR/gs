@@ -9,18 +9,18 @@ export default function Header() {
 
     return (
         <header  className="bg-gray-200 text-black py-4 px-6 md:px-8 flex items-center justify-between">
-        <Link className="flex items-center gap-2 font-bold text-lg" href="#">
+        <Link className="flex items-center gap-2 font-bold text-lg" href="/">
           <Logo />
           
         </Link>
         <nav className="hidden md:flex items-center gap-6">
-          <Link className=" " href="#">
+          <Link className=" " href="/product">
             <CardTitle className="text-blue-600 hover:underline  text-sm">PRODUCT</CardTitle> 
           </Link>
-          <Link className="" href="#">
+          <Link className="" href="/">
           <CardTitle className="text-blue-600 hover:underline  text-sm">ABOUT</CardTitle> 
           </Link>
-          <Link className="" href="#">
+          <Link className="" href="/">
           <CardTitle className="text-blue-600 hover:underline  text-sm">CONTACT</CardTitle> 
 
           </Link>
