@@ -8,7 +8,7 @@ import Link from "next/link";
 import { TruckComponent } from "@/app/components/truck";
 import Truck from '../../../../public/assets/truck.jpg'
 import Airplane from '../../../../public/assets/aviao.png'
-import Ship from '../../../../public/assets/navio.png'
+import Ship from '../../../../public/assets/navio3.png'
 import Home from '../../../../public/assets/homeTruck.png'
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator"
