@@ -49,7 +49,7 @@ const events: Event[] = [
   {
     year: '2024',
     title: 'Opening in the United States',
-    description: 'title'
+    description: 'Opening in the United States'
   }
   // Add more events here...
 ];
