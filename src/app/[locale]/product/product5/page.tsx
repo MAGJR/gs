@@ -76,12 +76,12 @@ export default function Page() {
     {
       id: 5,
       number: 1,
-      description: 'material in eps and epe',
+      description: 'material in EPS and epe',
     },
     {
       id: 6,
       number: 2,
-      description: 'side spacers d28',
+      description: 'side spacers D28',
     },
     {
       id: 7,
@@ -95,7 +95,7 @@ export default function Page() {
       id: 1,
       title: 'Lightweight',
       description:
-        'The bipartite thermal divider Soluforte weighs only 12kg, making it easier to handle.',
+        'The bipartite thermal divider GS weighs only 12kg, making it easier to handle.',
     },
     {
       id: 2,
@@ -139,7 +139,7 @@ export default function Page() {
             THAN ONE CARGO IN ONE VEHICLE.
           </CardTitle>
           <CardDescription className="mt-2">
-            Structured and light, the bipartite thermal divider Soluforte is
+            Structured and light, the bipartite thermal divider GS is
             manufactured to order, with foam panels and polyethylene tape, it
             has a thickness of 90mm and is covered with vinyl lona 530 micras,
             weighs around 12kg and can be used in any refrigerated vehicle.

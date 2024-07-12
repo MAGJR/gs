@@ -191,7 +191,7 @@ export default function Page() {
           <CardTitle>Composition</CardTitle>
           <CardDescription className="mt-2 mb-4">
             In order to increase durability, facilitate cleaning and reduce
-            weight, Soluforte works with the best materials in the composition
+            weight, GS works with the best materials in the composition
             of the thermal blanket.
           </CardDescription>
           <CardDescription className="mt-2 mb-8">

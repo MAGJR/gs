@@ -13,7 +13,7 @@ export const cardConfig: CardInfos = {
         {
             title: 'Our motto is to serve the customer',
             description: 'GS was founded in 1982 and it is still in the market because it pursues a clear objective: in partnership with the customers, to develop solutions for the logistic issues and bottlenecks they face. From the problems presented by our customers in their daily challenges is that our products are born and developed.',
-            subdescription: 'Soluforte produces and commercializes thermal insulation fabric, thermal division, thermal pallet cover and thermal bags.'
+            subdescription: 'GS produces and commercializes thermal insulation fabric, thermal division, thermal pallet cover and thermal bags.'
         }
     ],
     productCapaTermica : [
@@ -25,7 +25,7 @@ export const cardConfig: CardInfos = {
     productLonaTermica: [
         {
             title : 'What does that mean to you?',
-            description: `The most important aspect of the thermal bag is the maintenance and control of temperature, with a lightweight, flexible, and durable material. The nylon layers ensure a long lifespan, and the thermal layers restrict heat transfer and temperature exchange. Produced over 12 years of continuous development, Soluforte's thermal bag technology offers proven effectiveness in the real world.`
+            description: `The most important aspect of the thermal bag is the maintenance and control of temperature, with a lightweight, flexible, and durable material. The nylon layers ensure a long lifespan, and the thermal layers restrict heat transfer and temperature exchange. Produced over 12 years of continuous development, GS's thermal bag technology offers proven effectiveness in the real world.`
         }
     ],
     productBolsaTermica: [

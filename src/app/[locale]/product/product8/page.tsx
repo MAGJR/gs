@@ -170,7 +170,7 @@ export default function Page() {
           <CardTitle>Composition</CardTitle>
           <CardDescription className="mt-2 mb-8">
             With the intention of increasing durability, making cleaning easier
-            and reducing weight, Soluforte works with the best materials in the
+            and reducing weight, GS works with the best materials in the
             composition of its products. The structure is in aluminum, the net
             has a gramage of 530, the lateral protection bars are in aluminum,
             the ventilation kit was developed by our engineering team to give

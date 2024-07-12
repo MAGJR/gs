@@ -128,7 +128,7 @@ export default function Page() {
           </CardTitle>
           <CardDescription className="mt-2">
             Vehicles without refrigeration equipment cannot maintain the
-            temperature of perishable goods. For these cases, Soluforte
+            temperature of perishable goods. For these cases, GS
             developed the Thermal Bag, a thermal insulation for vehicles,
             removable, for the transport of frozen and cooled products, without
             the use of refrigeration systems.
@@ -189,7 +189,7 @@ export default function Page() {
           <CardTitle>Composition</CardTitle>
           <CardDescription className="mt-2 mb-4">
             In order to increase durability, ease cleaning and reduce weight,
-            Soluforte works with the best materials in the thermal lining
+            GS works with the best materials in the thermal lining
             composition.
           </CardDescription>
           <CardDescription className="mt-2 mb-4">

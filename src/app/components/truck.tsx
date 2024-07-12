@@ -20,7 +20,7 @@ export function TruckComponent() {
             <div className="mt-4 flex flex-col items-center justify-center">
               <CardTitle className="truncate mb-2">Fast Production</CardTitle>
               <CardDescription className="truncate">
-                We produce and dispatch your order within 24 hours
+                We produce and dispatch your order within 48 hours
               </CardDescription>
             </div>
           </CardContent>

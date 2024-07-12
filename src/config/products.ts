@@ -23,7 +23,7 @@ export const productConfig: ProductsInfo = {
         {
             id: 2,
             title: 'Thermal Blanket',
-            description: 'The Thermal Blanket Soluforte is a multi-layered insulation material developed with a system...',
+            description: 'The Thermal Blanket  is a multi-layered insulation material developed with a system...',
             image: imageCapaTermica,
             href: '/en/product/product2'
 
@@ -47,7 +47,7 @@ export const productConfig: ProductsInfo = {
         {
             id: 5,
             title: 'Bipartite Thermal Division',
-            description: 'Light and structured, the bipartite thermal division Soluforte is made to order, with plates...',
+            description: 'Light and structured, the bipartite thermal division GS is made to order, with plates...',
             image: divisorBipartida,
             href: '/en/product/product5'
 

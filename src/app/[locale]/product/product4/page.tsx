@@ -180,7 +180,7 @@ export default function Page() {
           </CardTitle>
           <CardDescription className="mt-2 mb-4">
             In order to increase durability, simplify cleaning and reduce
-            weight, Soluforte works with the best raw materials in the
+            weight, GS works with the best raw materials in the
             composition of its products.
           </CardDescription>
           <CardDescription className="mt-2 mb-4">

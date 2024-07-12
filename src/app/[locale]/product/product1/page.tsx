@@ -188,7 +188,7 @@ export default function Page() {
         <div className="flex flex-col" style={{ maxWidth: '600px' }}>
           <CardTitle>Composition</CardTitle>
           <CardDescription className="mt-2 mb-4">
-            To increase durability, ease cleaning, and reduce weight, Soluforte
+            To increase durability, ease cleaning, and reduce weight, GS
             works with the best materials in the thermal cover composition.
           </CardDescription>
           <CardDescription className=" mb-8">

@@ -76,7 +76,7 @@ export default function Page() {
     {
       id: 4,
       number: 2,
-      description: 'eps filling',
+      description: 'EPS filling',
     },
     {
       id: 5,

@@ -127,7 +127,7 @@ export default function Page() {
             </h1>
             <div className="mt-2">
               <p>
-                Soluforte was founded in 1982 and continues in the market
+                GS was founded in 1982 and continues in the market
                 because it pursues a clear goal: in partnership with our
                 customers, to develop solutions for the logistical problems and
                 bottlenecks. From the problems presented by our customers in
@@ -137,7 +137,7 @@ export default function Page() {
             </div>
             <div className="mt-3">
               <p>
-                Soluforte manufactures and commercializes thermal insulation,
+                GS manufactures and commercializes thermal insulation,
                 thermal separators, pallet coverings and thermal foam.
               </p>
             </div>
