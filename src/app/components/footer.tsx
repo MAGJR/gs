@@ -19,13 +19,13 @@ export default function Footer() {
             />
           </div>
           <nav className="flex items-center gap-6 mt-4 md:mt-0">
-            <Link className="hover:underline" href="#">
+            <Link className="hover:underline" href="/product">
               {t('site.main.product.footer.product')}
             </Link>
-            <Link className="hover:underline" href="#">
+            <Link className="hover:underline" href="/">
               {t('site.main.product.footer.about')}
             </Link>
-            <Link className="hover:underline" href="#">
+            <Link className="hover:underline" href="/">
               {t('site.main.product.footer.contact')}
             </Link>
           </nav>
