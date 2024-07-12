@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+import Image from 'next/image'
 
 export function Header() {
   return (
@@ -21,7 +20,10 @@ export function Header() {
         <a href="#" className="text-gray-700 hover:text-gray-900">
           Contato
         </a>
-        <a href="#" className="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
+        <a
+          href="#"
+          className="px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700"
+        >
           Loja Virtual
         </a>
       </nav>

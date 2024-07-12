@@ -1,8 +1,15 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { ProductsInfo } from "@/types/product";
-import Image from "next/image";
-import Link from "next/link";
+import { Button } from '@/components/ui/button'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
+import { ProductsInfo } from '@/types/product'
+import Image from 'next/image'
+import Link from 'next/link'
 
 type ProductPageProps = {
   items: ProductsInfo
@@ -16,12 +23,19 @@ export function Product({ items }: ProductPageProps) {
           <Card key={item.id} className="flex flex-col h-full">
             <CardHeader className="flex items-center justify-center h-48">
               <div className="relative w-48 h-48">
-                <Image src={item.image} alt={item.title} layout="fill" objectFit="contain" />
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  layout="fill"
+                  objectFit="contain"
+                />
               </div>
             </CardHeader>
             <CardContent className="flex-1 flex flex-col justify-between">
               <CardTitle>{item.title}</CardTitle>
-              <CardDescription className="flex-1">{item.description}</CardDescription>
+              <CardDescription className="flex-1">
+                {item.description}
+              </CardDescription>
             </CardContent>
             <CardFooter className="flex justify-center">
               <Link href={item.href}>
@@ -32,5 +46,5 @@ export function Product({ items }: ProductPageProps) {
         ))}
       </div>
     </div>
-  );
+  )
 }

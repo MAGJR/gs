@@ -1,21 +1,20 @@
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import Image from 'next/image'
+import { useState, useEffect } from 'react'
 
 import Hero from '../../../public/assets/Hero.png'
 
-
-const images = [Hero];
+const images = [Hero]
 
 const Carousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+    }, 3000)
 
-    return () => clearInterval(interval);
-  }, []);
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
@@ -33,8 +32,7 @@ const Carousel = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Carousel;
-
+export default Carousel
