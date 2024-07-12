@@ -96,6 +96,9 @@ export default function Page() {
             <h2 className="text-xl font-bold text-center text-blue-900">
               AIR TRANSPORT
             </h2>
+            <span className="text-red-500 italic flex items-center justify-center">
+              soon...
+            </span>
           </div>
           <Link href="/product" className="p-4 bg-white rounded shadow">
             <Image src={Truck} alt="Land Transport" width={300} />
@@ -110,6 +113,9 @@ export default function Page() {
             <h2 className="text-xl font-bold text-center text-blue-900">
               MARITIME TRANSPORT
             </h2>
+            <span className="text-red-500 italic flex items-center justify-center">
+              soon...
+            </span>
           </div>
         </div>
 
