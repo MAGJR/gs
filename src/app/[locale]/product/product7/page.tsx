@@ -121,7 +121,7 @@ export default function Page() {
     <div className="w-full flex flex-col items-center justify-center">
       <div className="flex flex-col items-center justify-center pt-5 mb-36">
         <CardTitle className="mb-4">Mobile Thermal Divider</CardTitle>
-        <Image width={400} src={HeroImg} alt="Hero" />
+        <Image width={600} src={HeroImg} alt="Hero" />
       </div>
 
       <div className="flex items-start gap-5 mr-auto pl-8 pb-8">
