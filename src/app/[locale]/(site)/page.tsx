@@ -43,7 +43,7 @@ export default function Page() {
               
             </div>
             <div className="flex-grow">
-              <Slider {...settings} className="mt-8 w-full max-w-2xl">
+              <Slider {...settings}  autoplaySpeed={10000} className="mt-8 w-full max-w-2xl">
                 <div>
                   <Image src={Home} width={500} height={300} alt="Home Truck" className="rounded-lg object-cover" />
                 </div>
@@ -80,7 +80,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="flex justify-center space-x-6 bg-gray-200 w-[1120px] rounded-lg ">
+        <div className="flex justify-center space-x-6 bg-gray-200 w-[1120px] rounded-lg  pt-2">
           <Image src={Divisor} alt='image' />
           <div className="p-8">
             <h1 className="text-3xl font-bold text-blue-900">Our motto is to serve the customer</h1>
