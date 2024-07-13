@@ -11,7 +11,7 @@ type Props = {
 }
 
 export const metadata: Metadata = {
-  title: 'GS | Products ',
+  title: 'GS | Home ',
   description: 'Get the best products all in one place',
 }
 
