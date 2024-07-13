@@ -49,7 +49,7 @@ export function TruckComponent() {
             </div>
             <div className="mt-4 flex flex-col items-center justify-center">
               <CardTitle className="truncate mb-2">
-                Production Guarantee
+              Product warranty 
               </CardTitle>
               <CardDescription className="truncate">
                 Lab test resulted in up to 44 hours of protection

@@ -64,7 +64,9 @@ export default function Timeline() {
 
   return (
     <div className="container mx-auto px-4 max-w-3xl">
-      <h1 className="text-2xl font-bold mb-4">Our history</h1>
+      <div className='flex items-center justify-center'>
+      <h1 className="text-2xl font-bold mb-12">Our history</h1>
+      </div>
       <div className="flex flex-col gap-4">
         <div className="relative">
           <div className="absolute inset-0 flex items-center justify-center">
