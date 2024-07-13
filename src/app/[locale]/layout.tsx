@@ -12,7 +12,7 @@ type Props = {
 
 export const metadata: Metadata = {
   title: 'GS | Home ',
-  description: 'Get the best products all in one place',
+  description: 'GS, the solution for your transport needs. Learn about our products and see how we can help.',
 }
 
 export default function Layout({ children, params: { locale } }: Props) {
