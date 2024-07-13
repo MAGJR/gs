@@ -17,6 +17,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import aviao2 from '../../../../public/assets/aviao2.jpg'
 import box from '../../../../public/assets/box.jpg'
+import {Customer} from '../../components/client'
 export default function Page() {
   const settings = {
     dots: true,
@@ -184,6 +185,7 @@ export default function Page() {
             </div>
           </div>
         </div>
+          <Customer />
       </main>
     </div>
   )
