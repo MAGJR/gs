@@ -7,7 +7,7 @@ import { Separator } from '@radix-ui/react-separator'
 
 export default function Header() {
   // const t = useTranslations()
-
+  
   return (
     <>
     <header className="bg-gray-200 text-black py-4 px-6 md:px-8 flex items-center justify-between">

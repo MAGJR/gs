@@ -65,7 +65,7 @@ export default function Timeline() {
   return (
     <div className="container mx-auto px-4 max-w-3xl">
       <div className='flex items-center justify-center'>
-      <h1 className="text-2xl font-bold mb-12">Our history</h1>
+      <h1 className="text-2xl font-bold mb-12 text-blue-900">Our history</h1>
       </div>
       <div className="flex flex-col gap-4">
         <div className="relative">
@@ -86,7 +86,7 @@ export default function Timeline() {
         </div>
         {selectedEvent && (
           <div className="mt-8 p-4 bg-gray-100 rounded-lg">
-            <h2 className="text-xl font-bold">{selectedEvent.title}</h2>
+            <h2 className="text-xl font-bold text-blue-900">{selectedEvent.title}</h2>
             <p>{selectedEvent.description}</p>
           </div>
         )}

@@ -18,7 +18,7 @@ export function TruckComponent() {
               <Truck width={80} height={80} />
             </div>
             <div className="mt-4 flex flex-col items-center justify-center">
-              <CardTitle className="truncate mb-2">Fast Production</CardTitle>
+              <CardTitle className="truncate mb-2 text-blue-900">Fast Production</CardTitle>
               <CardDescription className="truncate">
                 We produce and dispatch your order within 48 hours
               </CardDescription>
@@ -32,7 +32,7 @@ export function TruckComponent() {
               <Earth width={80} height={80} />
             </div>
             <div className="mt-4 flex flex-col items-center justify-center">
-              <CardTitle className="truncate mb-2">
+              <CardTitle className="truncate mb-2 text-blue-900">
                 Delivery to any point on the planet
               </CardTitle>
               <CardDescription className="truncate">
@@ -48,7 +48,7 @@ export function TruckComponent() {
               <Clock width={80} height={80} />
             </div>
             <div className="mt-4 flex flex-col items-center justify-center">
-              <CardTitle className="truncate mb-2">
+              <CardTitle className="truncate mb-2 text-blue-900">
               Product warranty 
               </CardTitle>
               <CardDescription className="truncate">

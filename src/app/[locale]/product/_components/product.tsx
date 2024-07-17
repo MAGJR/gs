@@ -32,7 +32,7 @@ export function Product({ items }: ProductPageProps) {
               </div>
             </CardHeader>
             <CardContent className="flex-1 flex flex-col justify-between">
-              <CardTitle>{item.title}</CardTitle>
+              <CardTitle className='text-blue-900'>{item.title}</CardTitle>
               <CardDescription className="flex-1">
                 {item.description}
               </CardDescription>
