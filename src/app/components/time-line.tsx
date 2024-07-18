@@ -67,12 +67,12 @@ export default function Timeline() {
       <div className='flex items-center justify-center'>
       <h1 className="text-2xl font-bold mb-12 text-blue-900">Our history</h1>
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:gap-8">
         <div className="relative">
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-full border-t-2 border-gray-300"></div>
           </div>
-          <div className="flex justify-between items-center relative z-10">
+          <div className="flex justify-between items-center relative z-10 flex-wrap">
             {events.map((event, index) => (
               <button
                 key={index}

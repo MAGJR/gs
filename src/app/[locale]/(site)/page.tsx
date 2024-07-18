@@ -32,18 +32,18 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-white">
-      <main className="flex flex-col items-center p-8 space-y-8">
-        <div className="flex items-center space-x-8">
-          <div className="flex flex-col space-y-4 sm:flex-row sm:space-x-8 sm:space-y-0">
+      <main className="flex flex-col items-center p-4 sm:p-8 space-y-8">
+        <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8">
+          <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8">
             <div className="flex items-center justify-center">
-              <div className="space-y-4 ">
-                <CardDescription className="font-semibold ">
+              <div className="space-y-4">
+                <CardDescription className="font-semibold text-center sm:text-left">
                   TERMIC SEPARATORS
                 </CardDescription>
-                <CardTitle className="font-bold text-blue-900">
+                <CardTitle className="font-bold text-blue-900 text-center sm:text-left">
                   Distribution of loads within trucks
                 </CardTitle>
-                <CardDescription className="">
+                <CardDescription className="text-center sm:text-left">
                   For frozen, cooled and dry loads
                 </CardDescription>
                 <Link href={'/product'}>
@@ -90,7 +90,7 @@ export default function Page() {
         </div>
 
         <Separator className="my-36" />
-        <div className="flex space-x-8">
+        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8">
           <div className="p-4 bg-white rounded shadow">
             <Image src={Airplane} alt="Air Transport" width={300} />
             <h3 className="mt-4 text-center text-gray-700">SOLUTIONS FOR</h3>
@@ -120,13 +120,13 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="flex justify-center space-x-6 bg-gray-200 w-[1120px] rounded-lg  pt-2">
+        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 bg-gray-200 w-full sm:w-[1120px] rounded-lg pt-2">
           <Image src={Divisor} alt="image" />
           <div className="p-8">
-            <h1 className="text-3xl font-bold text-blue-900">
+            <h1 className="text-3xl font-bold text-blue-900 text-center sm:text-left">
               Our motto is to serve the customer
             </h1>
-            <div className="mt-2">
+            <div className="mt-2 text-center sm:text-left">
               <p>
                 GS was founded in 1982 and continues in the market
                 because it pursues a clear goal: in partnership with our
@@ -136,13 +136,13 @@ export default function Page() {
                 developed.
               </p>
             </div>
-            <div className="mt-3">
+            <div className="mt-3 text-center sm:text-left">
               <p>
                 GS manufactures and commercializes thermal insulation,
                 thermal separators, pallet coverings and thermal foam.
               </p>
             </div>
-            <div className="mt-8">
+            <div className="mt-8 text-center sm:text-left">
               <Link href="/product">
                 <Button> See all our products</Button>
               </Link>
@@ -154,30 +154,30 @@ export default function Page() {
         <Timeline />
         <Separator className="my-36" />
 
-        <div className="flex justify-between items-stretch bg-gray-100 p-8 rounded-xl shadow-lg">
-          <div className="w-1/3 p-4">
+        <div className="flex flex-col sm:flex-row justify-between items-stretch bg-gray-100 p-4 sm:p-8 rounded-xl shadow-lg space-y-4 sm:space-y-0">
+          <div className="w-full sm:w-1/3 p-4">
             <div className="flex flex-col items-center">
               <h2 className="text-2xl font-bold text-blue-900">Mission</h2>
-              <p className="mt-4 text-gray-700">
+              <p className="mt-4 text-gray-700 text-center sm:text-left">
                 Develop customized solutions to meet customer needs, with
                 quality and efficiency.
               </p>
             </div>
           </div>
-          <div className="w-1/3 p-4 border-l border-r">
+          <div className="w-full sm:w-1/3 p-4 border-t sm:border-t-0 sm:border-l sm:border-r">
             <div className="flex flex-col items-center">
               <h2 className="text-2xl font-bold text-blue-900">Vision</h2>
-              <p className="mt-4 text-gray-700">
+              <p className="mt-4 text-gray-700 text-center sm:text-left">
                 To be the reference company in the industry, recognized as the
                 best option by customers, employees, suppliers, and society as a
                 whole.
               </p>
             </div>
           </div>
-          <div className="w-1/3 p-4">
+          <div className="w-full sm:w-1/3 p-4">
             <div className="flex flex-col items-center">
               <h2 className="text-2xl font-bold text-blue-900">Values</h2>
-              <p className="mt-4 text-gray-700">
+              <p className="mt-4 text-gray-700 text-center sm:text-left">
                 Integrity, commitment, human valuation, achievement of results,
                 continuous improvement of processes, innovation, respect for the
                 environment.
