@@ -18,6 +18,8 @@ import 'slick-carousel/slick/slick-theme.css'
 import aviao2 from '../../../../public/assets/aviao2.jpg'
 import box from '../../../../public/assets/box.jpg'
 import {Customer} from '../../components/client'
+import { Mission } from '@/app/components/mission'
+import { missionConfig } from '@/config/mission'
 export default function Page() {
   const settings = {
     dots: true,
@@ -36,7 +38,7 @@ export default function Page() {
         <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8">
           <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8">
             <div className="flex items-center justify-center">
-              <div className="space-y-4">
+              <div className="space-y-4 text-center">
                 <CardDescription className="font-semibold text-center sm:text-left">
                   TERMIC SEPARATORS
                 </CardDescription>
@@ -52,39 +54,41 @@ export default function Page() {
               </div>
             </div>
             <div className="flex-grow">
-              <Slider
-                {...settings}
-                autoplaySpeed={10000}
-                className="mt-8 w-full max-w-2xl"
-              >
-                <div>
-                  <Image
-                    src={Home}
-                    width={500}
-                    height={300}
-                    alt="Home Truck"
-                    className="rounded-lg object-cover"
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={aviao2}
-                    width={500}
-                    height={300}
-                    alt="Truck"
-                    className="rounded-lg object-cover"
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={box}
-                    width={500}
-                    height={300}
-                    alt="Airplane"
-                    className="rounded-lg object-cover"
-                  />
-                </div>
-              </Slider>
+              <div className="flex justify-center">
+                <Slider
+                  {...settings}
+                  autoplaySpeed={10000}
+                  className="mt-8 w-full max-w-2xl"
+                >
+                  <div>
+                    <Image
+                      src={Home}
+                      width={600}
+                      height={300}
+                      alt="Home Truck"
+                      className="rounded-lg object-cover"
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      src={aviao2}
+                      width={600}
+                      height={300}
+                      alt="Truck"
+                      className="rounded-lg object-cover"
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      src={box}
+                      width={600}
+                      height={300}
+                      alt="Airplane"
+                      className="rounded-lg object-cover"
+                    />
+                  </div>
+                </Slider>
+              </div>
             </div>
           </div>
         </div>
@@ -120,7 +124,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 bg-gray-200 w-full sm:w-[1120px] rounded-lg pt-2">
+        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 bg-gray-200 w-full sm:w-full rounded-lg pt-2"> {/* Updated width to be full for mobile */}
           <Image src={Divisor} alt="image" />
           <div className="p-8">
             <h1 className="text-3xl font-bold text-blue-900 text-center sm:text-left">
@@ -153,39 +157,8 @@ export default function Page() {
         <Separator className="my-36" />
         <Timeline />
         <Separator className="my-36" />
-
-        <div className="flex flex-col sm:flex-row justify-between items-stretch bg-gray-100 p-4 sm:p-8 rounded-xl shadow-lg space-y-4 sm:space-y-0">
-          <div className="w-full sm:w-1/3 p-4">
-            <div className="flex flex-col items-center">
-              <h2 className="text-2xl font-bold text-blue-900">Mission</h2>
-              <p className="mt-4 text-gray-700 text-center sm:text-left">
-                Develop customized solutions to meet customer needs, with
-                quality and efficiency.
-              </p>
-            </div>
-          </div>
-          <div className="w-full sm:w-1/3 p-4 border-t sm:border-t-0 sm:border-l sm:border-r">
-            <div className="flex flex-col items-center">
-              <h2 className="text-2xl font-bold text-blue-900">Vision</h2>
-              <p className="mt-4 text-gray-700 text-center sm:text-left">
-                To be the reference company in the industry, recognized as the
-                best option by customers, employees, suppliers, and society as a
-                whole.
-              </p>
-            </div>
-          </div>
-          <div className="w-full sm:w-1/3 p-4">
-            <div className="flex flex-col items-center">
-              <h2 className="text-2xl font-bold text-blue-900">Values</h2>
-              <p className="mt-4 text-gray-700 text-center sm:text-left">
-                Integrity, commitment, human valuation, achievement of results,
-                continuous improvement of processes, innovation, respect for the
-                environment.
-              </p>
-            </div>
-          </div>
-        </div>
-          <Customer />
+        <Mission items={missionConfig}/>
+        <Customer />
       </main>
     </div>
   )
